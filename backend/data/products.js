@@ -1,7 +1,7 @@
 const products = [
     {
         name: "Alpha (Limited Edition)",
-        description: "The first print run of Limited Edition, the first core set of Magic: The Gathering.",
+        description: "The first print run of Limited Edition, the first core set of Magic: The Gathering. Contains 15 (of 295 possible) black-bordered cards.",
         price: 30000,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/79465.jpg",
@@ -13,7 +13,7 @@ const products = [
     },
     {
         name: "Beta (Limited Edition)",
-        description: "The second print run of Limited Edition. Contains revisions and fixes from the original Alpha print-run.",
+        description: "The second print run of Limited Edition. Contains revisions and fixes from the original Alpha print-run. Contains 15 (of 302 possible) black-bordered cards.",
         price: 7000,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/79465.jpg",
@@ -25,7 +25,7 @@ const products = [
     },
     {
         name: "Unlimited Edition",
-        description: "The second edition of the core set. The first set to feature all white-bordered cards to indicate a reprinting.",
+        description: "The second edition of the core set. The first set to feature all white-bordered cards to indicate a reprinting. Contains 15 (of 302 possible) cards.",
         price: 2600,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/90084.jpg",
@@ -37,7 +37,7 @@ const products = [
     },
     {
         name: "Arabian Nights",
-        description: "The very first Magic: The Gathering expansion. A stand-alone product whose storyline setting is inspired and references One Thousand and One Nights ((Arabic: أَلْفُ لَيْلَةٍ وَلَيْلَةٌ‎, ʾAlf Laylah wa-Laylah), a collection of real-world Middle Eastern folk tales.",
+        description: "The very first Magic: The Gathering expansion. A stand-alone product whose storyline setting is inspired and references One Thousand and One Nights ((Arabic: أَلْفُ لَيْلَةٍ وَلَيْلَةٌ‎, ʾAlf Laylah wa-Laylah), a collection of real-world Middle Eastern folk tales. Contains 8 (of 78 possible) black-bordered cards.",
         price: 2600,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/79658.jpg",
@@ -49,7 +49,7 @@ const products = [
     },
     {
         name: "Antiquities",
-        description: "The second Magic: The Gathering expansion. The first set to have a backstory unique to Magic: The Gathering that explores the mythos of the Magic: The Gathering universe and a war of two brothers of their native plane of Dominaria. This was the first set that featured multiple alternate art for specific cards (at a strange distribution) in a set.",
+        description: "The second Magic: The Gathering expansion. The first set to have a backstory unique to Magic: The Gathering that explores the mythos of the Magic: The Gathering universe. This was the first set that featured multiple (15) alternate art for specific cards (at a strange distribution) in a set, making collectors view Antiquities as a 100-card set. Contains 8 (of 85 possible) black-bordered cards.",
         price: 1000,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/113971.jpg",
@@ -61,7 +61,7 @@ const products = [
     },
     {
         name: "Revised Edition",
-        description: "The third edition of Magic: The Gathering core sets.",
+        description: "The third edition of Magic: The Gathering core sets. Contains 15 (of 306 possible) white-bordered cards.",
         price: 400,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/118983.jpg",
@@ -73,7 +73,7 @@ const products = [
     },
     {
         name: "Legends",
-        description: "The third Magic: The Gathering expansion set. The first expansion set to be sold in booster packs of 15 cards (previously 8), and the first set to contain multicolored cards.",
+        description: "The third Magic: The Gathering expansion set. The first expansion set to be sold in booster packs of 15 cards (previously 8), and the first set to contain multicolored cards. Contains 15 (of 310 possible) black-bordered cards.",
         price: 1000,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/114549.jpg",
@@ -85,7 +85,7 @@ const products = [
     },
     {
         name: "The Dark",
-        description: "The fourth Magic: The Gathering expansion set. The storyline follows the events of a Dark Age after the climax of the Brothers' War in Antiquities.",
+        description: "The fourth Magic: The Gathering expansion set. The storyline follows the events of a Dark Age after the climax of Antiquities. Contains 8 (of 119 possible) black-bordered cards.",
         price: 120,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/117075.jpg",
@@ -97,7 +97,7 @@ const products = [
     },
     {
         name: "Fallen Empires",
-        description: "The fifth Magic: The Gathering expansion set.  The storyline is a continuation of the events that occured during The Dark. This was the first set that featured multiple alternate art for  specific cards (at a fixed distribution) in a set.",
+        description: "The fifth Magic: The Gathering expansion set.  The storyline is a continuation of the events that occured during The Dark. This was the first set that featured multiple (85) alternate art for specific cards (at a fixed distribution) in a set, making collectors view Fallen Empires as a 187-card set. Contains 8 (of 102 possible) black-bordered cards.",
         price: 15,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/82523.jpg",
@@ -109,7 +109,7 @@ const products = [
     },
     {
         name: "Fourth Edition (4th Edition)",
-        description: "The fourth edition of Magic: The Gathering core sets",
+        description: "The fourth edition of Magic: The Gathering core sets. Contains 15 (of 378 possible) white-bordered cards.",
         price: 60,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/143406.jpg",
@@ -121,7 +121,7 @@ const products = [
     },
     {
         name: "Ice Age",
-        description: "The sixth Magic: The Gathering expansion set, and the first set of the first featured block paradigm. The storyline follows a new ice age set after the events of the dark age.",
+        description: "The sixth Magic: The Gathering expansion set, and the first set of the first featured block paradigm. The storyline follows a new ice age set after the events of the dark age. Contains 15 (of 383 possible) black-bordered cards.",
         price: 50,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/143265.jpg",
@@ -133,7 +133,7 @@ const products = [
     },
     {
         name: "Homelands",
-        description: "The seventh Magic: The Gathering expansion set, praised for it's storyline setting and flavor that explored popular characters. This set also featured multiple alternate art for  specific cards (at a fixed distribution) in a set.",
+        description: "The seventh Magic: The Gathering expansion set, praised for it's storyline setting and flavor that explored popular characters. This set also featured multiple (25),alternate art for specific cards (at a fixed distribution) in a set, making collectors view Homelands as a 140-card set. Contains 8 (of 115 possible) black-bordered cards.",
         price: 14,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/112139.jpg",
@@ -145,7 +145,7 @@ const products = [
     },
     {
         name: "Alliances",
-        description: "The eighth Magic: The Gathering expansion set, and second set in the Ice Age block. This was the last set that featured multiple alternate art for specific cards (at a fixed distribution) in a set.",
+        description: "The eighth Magic: The Gathering expansion set, and second set in the Ice Age block. This was the last set that featured multiple (55) alternate art for specific cards (at a fixed distribution) in a set, making collectors view Alliances as a 199-card set. Contains 12 (of 144 possible) black-bordered cards.",
         price: 70,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/79439.jpg",
@@ -157,7 +157,7 @@ const products = [
     },
     {
         name: "Mirage",
-        description: "The ninth Magic: The Gathering expansion set, and first set in the Mirage block; best known for it's tropical African-themed setting on the plane of Dominaria. The storyline follows the disappearance of the planeswalker Teferi — and the three powerful spellcasters that seek him — setting off the events of the Mirage War. This was the first set designed for limited (draft and sealed) play",
+        description: "The ninth Magic: The Gathering expansion set, and first set in the Mirage block; best known for it's tropical African-themed setting. This was the first set designed for limited (draft and sealed) play. Contains 15 (of 350 possible) black-bordered cards.",
         price: 200,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/85667.jpg",
@@ -169,7 +169,7 @@ const products = [
     },
     {
         name: "Visions",
-        description: "The tenth Magic: The Gathering expansion set, and second set in the Mirage block. The storyline continues on the battle between the three spellcasters of the nations of Jamuraa, located on the plane of Dominaria. This was the first set to have a wide dispersal of pre-releases.",
+        description: "The tenth Magic: The Gathering expansion set, and second set in the Mirage block. The storyline is a continuation frome Mirage. This was the first set to have a wide dispersal of pre-releases. Contains 15 (of 167 possible) black-bordered cards.",
         price: 130,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/132212.jpg",
@@ -181,7 +181,7 @@ const products = [
     },
     {
         name: "Fifth Edition (5th Edition)",
-        description: "The fifth edition of Magic: The Gathering core sets. This set introduced, removed, and expanded upon rules that were disliked, confusing, counter-intuitive, and aimed for clarity.",
+        description: "The fifth edition of Magic: The Gathering core sets. This set introduced, removed, and expanded upon rules that were disliked, confusing, counter-intuitive, and aimed for clarity. Contains 15 (of 449 possible) white-bordered cards.",
         price: 40,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/1130837.jpg",
@@ -193,7 +193,7 @@ const products = [
     },
     {
         name: "Weatherlight",
-        description: "The eleventh Magic: The Gathering expansion set and third and final set in the Mirage block. The storyline focuses on the continuation of the events that unfolded after the Brothers' War in Antiquities. Four thousand years after the war, the evil Phyrexian lord Yawgmoth sits poised to invade his one-time home plane of Dominaria. The plane's only hope for survival is a cache of powerful artifacts known collectively as the Legacy. When put together to assemble a powerful doomsday weapon, these artifacts will have the potential to destroy the dark powers that will try to invade the planet. The focal point of this weapon is a flying ship called Weatherlight, and its intrepid crew searches the planes to find all of the pieces of the Legacy before the invasion commences.",
+        description: "The eleventh Magic: The Gathering expansion set and third and final set in the Mirage block. The set sees the beginning of the most important storyline in Magic: The Gathering, known as the Weatherlight Saga. Contains 15 (of 167 possible) black-bordered cards.",
         price: 80,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/90712.jpg",
@@ -205,7 +205,7 @@ const products = [
     },
     {
         name: "Tempest",
-        description: "The twelfth Magic: The Gathering expansion set and first set in the Tempest block. The story takes place on the stormy plane of Rath, — an artificial plane created by the Phyrexians as a staging point to invade Dominaria — and follows the adventures of the heroes of the Skyship Weatherlight.",
+        description: "The twelfth Magic: The Gathering expansion set and first set in the Tempest block. The storyline of the Weatherlight Saga continues. Contains 15 (of 350 possible) black-bordered cards.",
         price: 200,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/89386.jpg",
@@ -217,7 +217,7 @@ const products = [
     },
     {
         name: "Stronghold",
-        description: "The thirteenth Magic: The Gathering expansion set and second set in the Tempest block. The crew of the Weatherlight journey through the bowels of Volrath's Stronghold, battling the twisted creations of Volrath's evil mind in an attempt to rescue their imprisoned comrades. The stronghold yields many dark secrets about the crew's friends, enemies, and themselves.",
+        description: "The thirteenth Magic: The Gathering expansion set and second set in the Tempest block. The storyline of the Weatherlight Saga continues. Contains 15 (of 143 possible) black-bordered cards.",
         price: 250,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/89056.jpg",
@@ -229,7 +229,7 @@ const products = [
     },
     {
         name: "Exodus",
-        description: "The fourteenth Magic: The Gathering expansion set and third and final set in the Tempest block. The crew of the Weatherlight has rescued the pieces of the Legacy, their comrades, and must now escape to the portal that will lead them off the plane of Rath. However, they do not escape without their own perils. Having forced to strand their mage Ertai, another disturbing change has corrupted their fellow crewman Crovax. His newly-formed bloodlust and thirst for power threatens to destroy the entire ship. This was the first set to use color-coding of the expansion symbol to indicate the rarity of cards, as well as the addition of collector numbers.",
+        description: "The fourteenth Magic: The Gathering expansion set and third and final set in the Tempest block. The storyline of the Weatherlight Saga continues. This was the first set to use color-coding of the expansion symbol to indicate the rarity of cards, as well as the addition of collector numbers. Contains 15 (of 1430 possible) black-bordered cards.",
         price: 135,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/82440.jpg",
@@ -241,7 +241,7 @@ const products = [
     },
     {
         name: "Urza's Saga",
-        description: "The fifteenth Magic: The Gathering expansion set and first set in the Urza's block. The storyline departs from the Weatherlight Saga in a flashback of Urza, the victorious sibling of the Brother's War and depicts Urza's Saga from his past life, his conquests, plans, and the origins of the Legacy.",
+        description: "The fifteenth Magic: The Gathering expansion set and first set in the Urza's block. The storyline of the Weatherlight Saga continues. Contains 15 (of 350 possible) black-bordered cards.",
         price: 350,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/90180.jpg",
@@ -253,7 +253,7 @@ const products = [
     },
     {
         name: "Urza's Legacy",
-        description: "The sixteenth Magic: The Gathering expansion set and second set in the Urza's block. The storyline revolves around Urza's founding of the Tolarian academy — with notable student Teferi and Urza's construction of Karn, a time-travelling silver golem — in pursuit to build a collection of artifacts and a skyskip (later known as the Legacy and Weatherlight) to defeat an imminent Phyrexian Invasion.",
+        description: "The sixteenth Magic: The Gathering expansion set and second set in the Urza's block. The storyline of the Weatherlight Saga continues. This was the first set to feature randomly inserted foil cards. Contains 15 (of 143 possible) black-bordered cards.",
         price: 240,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/90164.jpg",
@@ -265,7 +265,7 @@ const products = [
     },
     {
         name: "Sixth Edition (6th Edition)",
-        description: "The sixth edition of Magic: The Gathering core sets. Also known as Classic, this set contained the largest rules changes the game had ever seen. Despite previous attempts to remove excess compliations, Classic aimed to reduce furthur confusion and make rules more intuitive.",
+        description: "The sixth edition of Magic: The Gathering core sets. Also known as Classic, this set contained the largest rules changes the game had ever seen. Despite previous attempts to remove excess compliations, Classic aimed to reduce furthur confusion and make rules more intuitive. Contains 15 (of 350 possible) white-bordered cards.",
         price: 42,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/94540.jpg",
@@ -277,7 +277,7 @@ const products = [
     },
     {
         name: "Urza's Destiny",
-        description: "The seventeenth Magic: The Gathering expansion set and third and final set in the Urza's block. The storyline revolves around the completion of the Weatherlight and Urza's pursuit of a eugenics program — labeled his Bloodlines experiments — to create a perfect crew for it, as well as engineering a race of soldiers to fight the Phyrexian Invasion. His final product of the Bloodline project would be Gerrard Capashen, eventual captain of the Weatherlight whose family line had been manipulated by Urza in order to create a perfect human who could stand against the Phyrexians and be the heir to Urza's Legacy.",
+        description: "The seventeenth Magic: The Gathering expansion set and third and final set in the Urza's block.The storyline of the Weatherlight Saga continues. Contains 15 (of 143 possible) black-bordered cards.",
         price: 180,     
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/90151.jpg",
@@ -289,7 +289,7 @@ const products = [
     },
     {
         name: "Mercadian Masques",
-        description: "The eighteenth Magic: The Gathering expansion set and first set in the Masques block. The storyline resumes where it left off as Skyship Weatherlight's escape from the plane of Rath finds itself in trouble again as it crash-lands on the strange new plane of Mercadia. The crew must gather supplies to repair Weatherlight and engineer their escape. There they encouonter the spiritual people of the Cho-Arrim, the greedy Mercadian magistrate and nobles, the guild of professional assassins called Catarans, and the Saprazzo, a rival trade city inhabited by enlightened merfolk called Saprazzan.",
+        description: "The eighteenth Magic: The Gathering expansion set and first set in the Masques block. The storyline of the Weatherlight Saga continues. Contains 15 (of 350 possible) black-bordered cards.",
         price: 50,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/85499.jpg",
@@ -301,7 +301,7 @@ const products = [
     },
     {
         name: "Nemesis",
-        description: "The nineteenth Magic: The Gathering expansion set and second set in the Masques block. The storyline revolves around the imminent Phyrexian invasion of Dominaria. The Evincar of Rath, Volrath had infiltrated the Weatherlight during the ships escape from Rath to Mercadia. His absence creates a power vacuum with Phyrexia choosing the cursed Crovax to be it's new Evincar ruler, after he is forced overboard attempting to sabotage the Weatherlight, and driven to madness. Crovax's dark rebirth and reign of terror is cemented when he defeats Volrath following his retreat back to Rath, and ascends as Evincar of Rath.",
+        description: "The nineteenth Magic: The Gathering expansion set and second set in the Masques block. The storyline of the Weatherlight Saga continues. Contains 15 (of 143 possible) black-bordered cards.",
         price: 33,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/113975.jpg",
@@ -313,7 +313,7 @@ const products = [
     },
     {
         name: "Prophecy",
-        description: "The twentieth Magic: The Gathering expansion set and third and final set in the Masques block. The storyline shifts itself back to the plane of Dominaria, and warrior nation Keld. The Keldon race were genetically augmented and enhanced by Gatha, a rogue student of Urza's who seceeds from his teachings during his Bloodlines experiments. With each new generation of Gatha’s creations came even more powerful and dangerous results, eventually catching the attention of Phyrexia. Keld repels the Phyrexian invasion, but not before Phyrexia understood the implications of Urza's research. It is revealed that the invasions and wars occurred during the history of Dominaria were preemptive strikes launched by the Phyrexians to sabotage Urza's plans of preventing the re-emergence of the Phyrexians. Now Keld declares war on Jamuraa on the eve of Phyrexia's invasion of Dominaria.",
+        description: "The twentieth Magic: The Gathering expansion set and third and final set in the Masques block. The storyline of the Weatherlight Saga continues. Contains 15 (of 143 possible) black-bordered cards.",
         price: 30,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/86993.jpg",
@@ -325,7 +325,7 @@ const products = [
     },
     {
         name: "Invasion",
-        description: "The twenty-first Magc: The Gathering expansion set and first set in the Invasion block. The storyline revolves around the Phyrexian invasion of Dominaria. The world looks to Urza, planeswalker and master artificer, for defense against the onslaught. As entire cultures fall under the Phyrexian hell, Urza unites heroes, renegades, common folk, and powerful artifacts to fight the invasion.",
+        description: "The twenty-first Magc: The Gathering expansion set and first set in the Invasion block. The storyline of the Weatherlight Saga continues. Contains 15 (of 350 possible) black-bordered cards.",
         price: 50,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/138496.jpg",
@@ -337,7 +337,7 @@ const products = [
     },
     {
         name: "Planeshift",
-        description: "The twenty-second Magc: The Gathering expansion set and second set in the Invasion block. The storyline continues to follow the ongoing Phyrexian invasion of Dominaria in full swing and despite some early victories, Urza and the armies of Dominaria are losing. As the struggle rages, portions of the artificial plane Rath begin appearing in Dominaria, bringing hordes of Phyrexian reinforcements into the battle.",
+        description: "The twenty-second Magc: The Gathering expansion set and second set in the Invasion block. The storyline of the Weatherlight Saga continues. Contains 15 (of 143 possible) black-bordered cards.",
         price: 25,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/114587.jpg",
@@ -349,7 +349,7 @@ const products = [
     },
     {
         name: "Seventh Edition",
-        description: "The seventh edition of Magic: The Gathering core sets. This was the first core set to narrate a storyline within its art and flavor text. The set narrates events of a war between two bands led by the Northern Paladin and Southern Paladin, versus the Eastern Paladin and Western Paladin. This is the first core set to include foil cards, which are printed with black borders — and would become the norm — as opposed to the traditionally white borders of core set reprints. This is also the last core set printed in the 'old' pre-modern card frame.",
+        description: "The seventh edition of Magic: The Gathering core sets. This was the first core set to narrate a storyline within its art and flavor text. This is the first core set to include foil cards, which are printed with black borders — and would become the norm — as opposed to the traditionally white borders of core set reprints. This is also the last core set printed in the 'old' pre-modern card frame. Contains 15 (of 350 possible) white-bordered cards.",
         price: 125,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/91209.jpg",
@@ -361,7 +361,7 @@ const products = [
     },
     {
         name: "Apocalypse",
-        description: "The twenty-third Magc: The Gathering expansion set and third and final set in the Invasion block. The Coalition forces fight their way to the Phyrexian Stronghold, but Urza and Gerrard are captured by Yawgmoth and ordered to fight to the death against each other. Gerrard decapitates Urza and escapes, eventually reuniting with the Weatherlght. Under the guidance of the decapitated Urza, he instructs Gerrard to take out his powerstone eyes and place them in two sockets in Karn's chest. This completes the Legacy, forming that which legend refers to as the Legacy Weapon. Light spreads all over the world, eradicating Yawgmoth's essence. Gerrard and Urza do not survive the Weapon's activation, and the Weatherlight crashes into the ocean, its planeswalking powers permanently burned out and transferred to Karn, who has become a planeswalker in his own right. The Phyrexian threat has been repelled once again, and the Weatherlight Saga comes to an end.",
+        description: "The twenty-third Magc: The Gathering expansion set and third and final set in the Invasion block. The storyline of the Weatherlight Saga comes to an end. Contains 15 (of 143 possible) black-bordered cards.",
         price: 35,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/92410.jpg",
@@ -373,7 +373,7 @@ const products = [
     },
     {
         name: "Odyssey",
-        description: "The twenty-fourth Magc: The Gathering expansion set and first set in the Odyssey block. A new saga takes place on the continent of Otaria on the devastated plane of Dominaria centuries after the events of Urza's destruction of the Phyrexian threat. The continent is divided by the underwater Meer Empire of the cephalids; barbarians and dwarves of the Pardic Mountains; centaurs, druids and creatures of the Krosan Forest; the desert nomands and bird (aven) warriorsof the Order; and the Cabal occult ogranization that controls most of the land and its wealth who operates pit fights for entertainment of the massess, fame, and fortune. The storyline follows a pit-fighter from each region and their conquest for The Mirari — a mysterious artifact of unspeakable power able to grant the desires and wishes of its wielder. Kamahl the barbarian leaves his sister Jeska of the Pardic Mountains to make a name for himself; Thriss and Seton of the Krosan Forest seeks to investigate the disturbance of nature brought upon by the Mirari; Advisor Laquatus of the Meer Empire, ambassador to the Cabal, scheme for absolute control of the seas and lands; and militaristic leaders Kirtar, Pianna, Teroh, and Eesha of the Order strives to break the Cabal's iron fist over the populace.",
+        description: "The twenty-fourth Magc: The Gathering expansion set and first set in the Odyssey block. A new story begins in The Mirari Crisis, with a net setting and a new cast of characters. Contains 15 (of 350 possible) black-bordered cards.",
         price: 40,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/96346.jpg",
@@ -385,7 +385,7 @@ const products = [
     },
     {
         name: "Torment",
-        description: "The twenty-fifth Magc: The Gathering expansion set and second set in the Odyssey block. The storyline presents the tale of Chainer, a Cabal dementia summoner, discovering the Mirari and rising through the ranks of the Cabal, rivaling the Cabal Patriarch himself. His befriendment of Kamahl changes Kamahl's barbaric perceptions and approach to life afte Chainer's subsequential fall.",
+        description: "The twenty-fifth Magc: The Gathering expansion set and second set in the Odyssey block. The storyline of the Mirari Crisis continues. Contains 15 (of 143 possible) black-bordered cards.",
         price: 25,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/101330.jpg",
@@ -397,7 +397,7 @@ const products = [
     },
     {
         name: "Judgement",
-        description: "The twenty-sixth Magc: The Gathering expansion set and third and final set in the Odyssey block. The storyline follows Kamahl, who, in keeping truth to his promise made to a dying Chainer, keeps the Mirari safe from others and from himself. Several characters, including Laquatus and Eesha, attempt to obtain the potent orb for themselves and Kamahl's sister and mentor, Jeska and Balthor, endeavor to separate the Mirari from Kamahl for fear of the corrupting influence that the orb has on Kamahl, who slays Balthor and nearly mortally wounding Jeska. Ultimately, after substantial politics and warring, the influence of the Mirari on individuals is diminished. A majority of the characters are killed, and the Mirari, attached to Kamahl's sword, is implanted through the corpse of Laquatus and into the Krosan Forest, thereby channeling the powerful magic into the land and allowing both the fauna and flora to grow larger and wilder.",
+        description: "The twenty-sixth Magc: The Gathering expansion set and third and final set in the Odyssey block.TThe storyline of the Mirari Crisis continues. Contains 15 (of 143 possible) black-bordered cards.",
         price: 34,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/107761.jpg",
@@ -409,7 +409,7 @@ const products = [
     },
     {
         name: "Onslaught",
-        description: "The twenty-seventh Magc: The Gathering expansion set and first set in the Onslaught block. A continuation of the storyline developed in the Odyssey Cycle, Kamahl has relocated to the Krosan Forest with the Mirari and becomes a druid of Krosa. The power of the Mirari begins to work on the forest, mutating its residents and growing some of them to gigantic proportions. Meanwhile, Kamahl's sister Jeska is transformed by foul Cabal healing magic, into Phage, a pit fighter whose touch brings death. The illusionist Ixidor discovers his new powers of reality sculpting. Ixidor uses his new power to create the angel Akroma to destroy Phage.",
+        description: "The twenty-seventh Magc: The Gathering expansion set and first set in the Onslaught block. The storyline of the Mirari Crisis continues. Contains 15 (of 350 possible) black-bordered cards.",
         price: 50,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/104433.jpg",
@@ -421,7 +421,7 @@ const products = [
     },
     {
         name: "Legions",
-        description: "The twenty-eighth Magc: The Gathering expansion set and second set in the Onslaught block. The storyline depicts Kamahl and the Cabal, in an uneasy alliance, setting out to defeat Akroma. Ixidor has been killed but Akroma nevertheless remains intent on destroying Phage. In a final battle between Phage and Akroma, Kamahl intervened, and with one swing of his weapon, killed the two beings along with the mortal woman bystander Zagorka. The tremendous essence of mana and power of the three women blended into a new being — Karona, the manifestation of all Dominarian mana goddess of magic. This was the first set to print only creature-type cards.",
+        description: "The twenty-eighth Magc: The Gathering expansion set and second set in the Onslaught block. The storyline of the Mirari Crisis continues. This was the first set to print only creature-type cards. Contains 15 (of 145 possible) black-bordered cards.",
         price: 17,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/107464.jpg",
@@ -433,7 +433,7 @@ const products = [
     },
     {
         name: "Scourge",
-        description: "The twenty-ninth Magc: The Gathering expansion set and third and final set in the Onslaught block. The storyline follows the continuation of the war between Phage and Akroma, with a conclusion to the Mirari crisis. With both beings dead resulting in the fusion of Karona, Otaria is once again torn by various militant factions, keen to proclaim Karona as their god. Kamahl eventually frees his sister Jeska from both Karona and Phage, and Karn returns to Dominaria to take her to the plane of Mirrodin — a plane he substantially shaped — where he proclaims Jeska to be a planeswalker. This is the last expansion set printed in the 'old' pre-modern card frame.",
+        description: "The twenty-ninth Magc: The Gathering expansion set and third and final set in the Onslaught block. The storyline of the Mirari Crisis comes to an end. This is the last expansion set printed in the 'old' pre-modern card frame. Contains 15 (of 143 possible) black-bordered cards.",
         price: 20,
         countInStock: 1000,
         imageURL: "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/108316.jpg",
