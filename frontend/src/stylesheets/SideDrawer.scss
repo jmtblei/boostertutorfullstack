@@ -1,0 +1,52 @@
+.sidedrawer {
+    width: 70%;
+    background: $white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-out;
+
+    @media (min-width: 960px) {
+        display: none;
+    }
+}
+
+.sidedrawer.show {
+    transform: translateX(0);
+}
+
+.sidedrawer-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    li {
+        @include flex-centered;
+        
+        a {
+            @include flex-centered;
+            justify-content: center;
+            text-align: center;
+            flex: 1;
+            padding: 1rem;
+            text-decoration: none;
+            color: $black;
+            font-size: 1.6rem;
+            :hover {
+                background: $dark-gray;
+                color: $off-white;
+            }
+
+            span {
+                @include flex-centered;
+                margin-left: 8px;
+            }
+        }
+    }
+}

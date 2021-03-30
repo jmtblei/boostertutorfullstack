@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = ({ click }) => {
     return (
         <nav className="navbar">
             <div className="navbar-logo">
@@ -19,6 +19,9 @@ const NavBar = () => {
                     <Link to="/">Shop</Link>
                 </li>
             </ul>
+            <div className="hamburger-menu" onClick={click}>
+                <i className="fas fa-bars"></i>
+            </div>
         </nav>
     )
 }
