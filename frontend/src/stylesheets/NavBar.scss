@@ -1,0 +1,46 @@
+.navbar {
+    width: 100%;
+    background-color: $black;
+    @include flex-centered;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    z-index: 50;
+
+    .navbar-logo h2 {
+        color: $off-white;
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+
+    .navbar-links {
+        @include flex-centered;
+        list-style: none;
+
+        li {
+            padding-left: 1.5rem;
+
+            a {
+                text-decoration: none;
+                color: $off-white;
+                font-size: 1.2rem;
+                @include flex-centered;
+
+                span {
+                    @include flex-centered;
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+
+    .cart-link {
+        background: $dark-gray;
+        padding: 10px;
+        border-radius: 8px;
+        :hover {
+            background: $pink;
+            color: $off-white
+        }
+    }
+}
+
