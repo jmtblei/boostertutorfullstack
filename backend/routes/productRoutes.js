@@ -15,3 +15,5 @@ router.get("/", getAllProducts);
 //@route get /api/products/:id
 //@access public
 router.get("/:id", getProductById);
+
+module.exports = router;

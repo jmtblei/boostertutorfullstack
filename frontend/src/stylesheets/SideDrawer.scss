@@ -28,6 +28,10 @@
 
     li {
         @include flex-centered;
+        :hover {
+            background-color: $black;
+            color: $off-white;
+        }
         
         a {
             @include flex-centered;
@@ -38,10 +42,6 @@
             text-decoration: none;
             color: $black;
             font-size: 1.6rem;
-            :hover {
-                background: $dark-gray;
-                color: $off-white;
-            }
 
             span {
                 @include flex-centered;
@@ -50,3 +50,16 @@
         }
     }
 }
+
+.sidedrawer-cartbadge {
+    @include flex-centered;
+    justify-content: center;
+    @include cart-badge;
+    background-color: $pink;
+    color: $black;
+}
+
+.sidedrawer-links > li > a:hover .sidedrawer-cartbadge {
+    background-color: $off-white;
+    color: $black;
+  }

@@ -16,6 +16,7 @@ const SideDrawer = ({ click, show }) => {
                         <i className="fas fa-shopping-cart"></i>
                             <span>
                                 Cart{" "}
+                                <span className="sidedrawer-cartbadge">0</span>
                             </span>
                     </Link>
                 </li>

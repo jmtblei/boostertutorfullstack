@@ -49,6 +49,14 @@
         border-radius: 8px;
     }
 
+    .cartlogo-badge {
+        @include flex-centered;
+        justify-content: center;
+        @include cart-badge;
+        background-color: $off-white;
+        color: $black;
+    }
+
     .hamburger-menu {
         display: none;
         flex-direction: column;

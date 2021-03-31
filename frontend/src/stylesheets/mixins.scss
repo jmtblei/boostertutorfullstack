@@ -1,4 +1,13 @@
 @mixin flex-centered {
     display: flex;
     align-items: center;
-}
+};
+
+@mixin cart-badge {
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 8px;
+    font-size: 1rem;
+};
