@@ -4,30 +4,46 @@ import sampleBooster from "../1.jpg";
 
 const CartItem = ({ item, qtyChangeHandler, removeHandler }) => {
   return (
-    <div>
-      <div>
-        <img src={sampleBooster} alt={item.name} />
-        {/* <img src={item.imageURL} alt={item.name} /> */}
+    <div className="cartitem">
+      <div className="cartitem-image">
+        <Link to={`/product/${item.product}`}>    
+            <img src={sampleBooster} alt={item.name} />
+            {/* <img src={item.imageURL} alt={item.name} /> */}
+        </Link>
       </div>
-      <Link to={`/product/${item.product}`}>
-        <p>{item.name}</p>
-      </Link>
-      <p>${item.price}</p>
-      <select
-        value={item.qty}
-        onChange={(e) => qtyChangeHandler(item.product, e.target.value)}
-      >
-        {[...Array(item.countInStock).keys()].map((x) => (
-          <option key={x + 1} value={x + 1}>
-            {x + 1}
-          </option>
-        ))}
-      </select>
-      <button
-        onClick={() => removeHandler(item.product)}
-      >
-        <i className="fas fa-trash"></i>
-      </button>
+      <div className="cartitem-box">
+        <div className="cartitem-grid">
+            <h4>Item</h4>
+            <Link to={`/product/${item.product}`} className="cartitem-name">
+                <p>{item.name} Booster Pack</p>
+            </Link>
+        </div>
+        <div className="cartitem-grid">
+            <h4>Price</h4>
+            <p>${item.price}</p>
+        </div>
+        <div className="cartitem-grid">
+            <h4>Qty</h4>
+            <select
+                value={item.qty}
+                onChange={(e) => qtyChangeHandler(item.product, e.target.value)}
+            >
+                {[...Array(item.countInStock).keys()].map((x) => (
+                <option key={x + 1} value={x + 1}>
+                    {x + 1}
+                </option>
+                ))}
+            </select>
+        </div>
+        <div className="cartitem-grid">
+            <h4>Remove</h4>
+            <button
+                onClick={() => removeHandler(item.product)}
+            >
+                <i className="fas fa-trash"></i>
+            </button>
+        </div>
+      </div>
     </div>
   );
 };

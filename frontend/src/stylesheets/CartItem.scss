@@ -1,0 +1,104 @@
+.cartitem {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    gap: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    place-items: center;
+    margin: 8px;
+    background-color: $off-blue;
+
+    .cartitem-image img {
+        max-height: 170px;
+
+        @media (max-width: 700px) {
+            display: none;
+        }
+
+        @media (max-width: 500px) {
+            display: none;
+        }
+    }
+
+    .cartitem-box {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .cartitem-grid {
+        padding: 5px;
+
+        h4 {
+            font-size: .7rem;
+            padding-bottom: 8px;
+        }
+        
+        .cartitem-name {
+            text-decoration: none;
+            color: $black;
+            :hover {
+                color: $pink;
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-weight: 600;;
+            line-height: 150%;
+        }
+    
+        select {
+            @include select-style;
+        }
+    
+        button {
+            padding: 10px 16px;
+            background: $pink;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .cartitem-grid {
+                align-content: flex-start;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+
+            .cartitem-name {
+                font-size: 0.8rem;
+            }
+
+            button {
+                padding: 8px 12px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .cartitem-grid {
+                align-content: center;
+            }
+            
+            h4 {
+                font-size: 0.6em;
+            }
+            
+            .cartitem-name {
+                font-size: 0.8rem;
+            }
+
+            button {
+                padding: 8px 12px;
+            }
+        }
+
+    }
+
+}

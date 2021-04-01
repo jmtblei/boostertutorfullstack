@@ -1,3 +1,8 @@
+@mixin screen-dimens {
+    max-width: 1300px;
+    margin: 1rem auto;
+}
+
 @mixin flex-centered {
     display: flex;
     align-items: center;
@@ -11,3 +16,9 @@
     margin-left: 8px;
     font-size: 1rem;
 };
+
+@mixin select-style {
+    padding: 5px;
+    background-color: $off-white;
+    cursor: pointer;
+}

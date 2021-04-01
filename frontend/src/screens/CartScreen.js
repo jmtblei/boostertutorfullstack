@@ -32,11 +32,26 @@ const CartScreen = () => {
       .toFixed(2);
   };
 
+  const getTax = () => {
+    return cartItems
+      .reduce((price, item) => price + item.price * item.qty * 0.08, 0)
+      .toFixed(2);
+  };
+
+  const getTotal = () => {
+    let subTotal = cartItems
+      .reduce((price, item) => price + item.price * item.qty, 0);
+    let tax = cartItems
+      .reduce((price, item) => price + item.price * item.qty * 0.08, 0);
+    return (subTotal + tax).toFixed(2);
+  };
+  
+
   return (
     <>
-      <div>
-        <div>
-          <h2>Shopping Cart</h2>
+      <div className="cartscreen">
+        <div className="cartscreen-left">
+            <h4>Your Shopping Cart</h4>
 
           {cartItems.length === 0 ? (
             <div>
@@ -54,13 +69,16 @@ const CartScreen = () => {
           )}
         </div>
 
-        <div>
-          <div>
-            <p>Subtotal ({getCartCount()}) items</p>
+        <div className="cartscreen-right">
+          <div className="cartscreen-info">
+            <h2>Order Summary</h2>
+            <p>Subtotal ({getCartCount()}) Items</p>
             <p>${getCartSubTotal()}</p>
+            <p>+${getTax()} Tax</p>
+            <p>Your Total ${getTotal()}</p>
           </div>
           <div>
-            <button>Proceed To Checkout</button>
+            <button>Place Your Order</button>
           </div>
         </div>
       </div>
