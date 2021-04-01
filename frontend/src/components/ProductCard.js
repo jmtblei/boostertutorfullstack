@@ -16,13 +16,15 @@ const ProductCard = ({
     return (
         <div className="product">
             <div className="product-info">
-                <p className="info-name">{name}</p>
+                {/* <img src={logoURL} alt={name} className="product-logo"/> */}
                 <Link to={`/product/${productId}`}>
                     {/* <img src={imageURL} alt={name} /> */}
-                    <img src={sampleBooster} alt={name} />
+                    <img src={sampleBooster} alt={name} className="product-img"/>
                 </Link>
-                <p className="info-price">${price}</p>
-                {/* <img src={logoURL} alt={name} /> */}
+                <div className="info-box">
+                    <p className="info-name">{name}</p>
+                    <p className="info-price">${price}</p>
+                </div>
             </div>
         </div>
     )

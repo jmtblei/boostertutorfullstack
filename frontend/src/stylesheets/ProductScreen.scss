@@ -47,20 +47,24 @@
         height: fit-content;
 
         img {
-            max-width: 50%;
+            max-height: 60px;
+            background-color: $off-blue;
         }
 
         .left-subinfo {
             display: flex;
             flex-direction: column;
             margin: 10px;
-            
+                
             p {
                 padding-top: 5px;
                 font-size: .9rem;
                 font-style: bold;
+                line-height: 150%;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.2);
             }
         }
+
     }
 
     .productscreen-right {
@@ -78,6 +82,7 @@
             font-weight: 600;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
             button {
                 grid-column: 1/-1;
@@ -92,9 +97,10 @@
         }
 
         select {
-            flex-direction: column;
-            flex: 1;
+            padding: 5px;
+            background-color: $off-white;
+            cursor: pointer;
         }
     }
 }
-  
+

@@ -55,34 +55,34 @@ const ProductScreen = ({ match, history }) => {
                 </div>
                 <div className="productscreen-right">
                     <div className="right-info">
-                    <p>
-                        Price:
-                        <span>${product.price}</span>
-                    </p>
-                    <p>
-                        Status:
-                        <span>
-                        {product.countInStock > 0 ? "In Stock" : "Out of Stock"}
-                        </span>
-                    </p>
-                    <p>
-                        Qty
-                        <select 
-                            value={qty} 
-                            onChange={(e) => setQty(e.target.value)}
-                        >
-                        {[...Array(product.countInStock).keys()].map((x) => (
-                            <option key={x + 1} value={x + 1}>
-                                {x + 1}
-                            </option>
-                        ))}
-                        </select>
-                    </p>
-                    <p>
-                        <button type="button" onClick={addToCartHandler}>
-                            Add To Cart
-                        </button>
-                    </p>
+                        <p>
+                            Price:
+                            <span>${product.price}</span>
+                        </p>
+                        <p>
+                            Status:
+                            <span>
+                            {product.countInStock > 0 ? `In Stock (${product.countInStock})` : "Out of Stock"}
+                            </span>
+                        </p>
+                        <p>
+                            Select Qty
+                            <select 
+                                value={qty} 
+                                onChange={(e) => setQty(e.target.value)}
+                            >
+                            {[...Array(product.countInStock).keys()].map((x) => (
+                                <option key={x + 1} value={x + 1}>
+                                    {x + 1}
+                                </option>
+                            ))}
+                            </select>
+                        </p>
+                        <p>
+                            <button type="button" onClick={addToCartHandler}>
+                                Add To Cart
+                            </button>
+                        </p>
                     </div>
                 </div>
                 </>

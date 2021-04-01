@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const SideDrawer = ({ click, show }) => {
     const sideDrawerClass = ["sidedrawer"];
@@ -7,6 +8,13 @@ const SideDrawer = ({ click, show }) => {
     if (show) {
         sideDrawerClass.push("show");
     }
+
+    const cart = useSelector((state) => state.cart);
+    const { cartItems } = cart;
+
+    const getCartCount = () => {
+        return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
+    };
 
     return (
         <div className={sideDrawerClass.join(" ")}>
@@ -16,7 +24,7 @@ const SideDrawer = ({ click, show }) => {
                         <i className="fas fa-shopping-cart"></i>
                             <span>
                                 Cart{" "}
-                                <span className="sidedrawer-cartbadge">0</span>
+                                <span className="sidedrawer-cartbadge">{getCartCount()}</span>
                             </span>
                     </Link>
                 </li>

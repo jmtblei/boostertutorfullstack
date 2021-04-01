@@ -1,11 +1,13 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import sampleBooster from "../1.jpg";
 
 const CartItem = ({ item, qtyChangeHandler, removeHandler }) => {
   return (
     <div>
       <div>
-        <img src={item.imageURL} alt={item.name} />
+        <img src={sampleBooster} alt={item.name} />
+        {/* <img src={item.imageURL} alt={item.name} /> */}
       </div>
       <Link to={`/product/${item.product}`}>
         <p>{item.name}</p>
