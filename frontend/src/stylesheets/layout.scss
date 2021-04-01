@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i&display=swap');
+
+$serif: 'Cormorant Garamond', Georgia, Times, "Times New Roman", serif;
+$sans-serif: 'Open Sans', Helvetica, "Helvetica Neue", Arial, sans-serif;
+
 * {
     padding: 0;
     margin: 0;
@@ -6,11 +12,19 @@
 
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
+    font-family: $sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+  
+h2 {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 1rem;
 }
   
 code {

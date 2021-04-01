@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import sampleBooster from "../1.jpg";
 
 const ProductCard = ({
     name,
@@ -7,22 +8,21 @@ const ProductCard = ({
     imageURL,
     logoURL,
     description,
-    symbolURL,
     releaseDate,
     setType,
     block,
     productId
 }) => {
     return (
-        <div>
-            <img src={imageURL} alt={name} />
-            <div>
-                <p>{name}</p>
-                <p>${price}</p>
-                {/* <img src={logoURL} alt={name} /> */}
+        <div className="product">
+            <div className="product-info">
+                <p className="info-name">{name}</p>
                 <Link to={`/product/${productId}`}>
-                    View
+                    {/* <img src={imageURL} alt={name} /> */}
+                    <img src={sampleBooster} alt={name} />
                 </Link>
+                <p className="info-price">${price}</p>
+                {/* <img src={logoURL} alt={name} /> */}
             </div>
         </div>
     )

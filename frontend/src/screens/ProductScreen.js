@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { getProductDetails } from "../redux/actions/productActions";
 import { addToCart } from "../redux/actions/cartActions";
+import sampleBooster from "../1.jpg";
 
 const ProductScreen = ({ match, history }) => {
     const [qty, setQty] = useState(1);
@@ -24,28 +25,36 @@ const ProductScreen = ({ match, history }) => {
     };
 
     return (
-        <div>
+        <div className="productscreen">
             {loading ? (
                 <h2>Loading...</h2>
             ) : error ? (
                 <h2>{error}</h2>
             ) : (
                 <>
-                <div>
-                    <div>
-                        <img src={product.imageURL} alt={product.name} />
+                <div className="productscreen-left">
+                    <div className="left-image">
+                        {/* <img src={product.imageURL} alt={product.name} /> */}
+                        <img src={sampleBooster} alt={product.name} />
                     </div>
-                    <div>
-                        <p>Product {product.name}</p>
-                        <p>Price: ${product.price}</p>
-                        <p>Description: {product.description}</p>
-                        <p>Release Date: {product.releaseDate}</p>
-                        {/* <img src={product.logoURL} alt={product.name}/>
-                        <img src={product.symbolURL} alt={product.name}/> */}
+                    <div className="left-info">
+                        <img src={product.logoURL} alt={product.name}/>
+                        <div className="left-subinfo">
+                            <h4>Product Name:</h4>
+                            <p>{product.name} Booster Pack</p>
+                        </div>
+                        <div className="left-subinfo">
+                            <h4>Release Date:</h4>
+                            <p>{product.releaseDate}</p>
+                        </div>
+                        <div className="left-subinfo">
+                            <h4>Description:</h4>
+                            <p>{product.description}</p>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div className="productscreen-right">
+                    <div className="right-info">
                     <p>
                         Price:
                         <span>${product.price}</span>
@@ -58,10 +67,13 @@ const ProductScreen = ({ match, history }) => {
                     </p>
                     <p>
                         Qty
-                        <select value={qty} onChange={(e) => setQty(e.target.value)}>
+                        <select 
+                            value={qty} 
+                            onChange={(e) => setQty(e.target.value)}
+                        >
                         {[...Array(product.countInStock).keys()].map((x) => (
                             <option key={x + 1} value={x + 1}>
-                            {x + 1}
+                                {x + 1}
                             </option>
                         ))}
                         </select>

@@ -16,9 +16,9 @@ const HomeScreen = () => {
   }, [dispatch]);
 
   return (
-    <div>
-      <h2>Latest Products</h2>
-      <div>
+    <div className="homescreen">
+      <h2 className="homescreen-title">Draft Boosters For Sale</h2>
+      <div className="homescreen-products">
         {loading ? (
           <h2>Loading...</h2>
         ) : error ? (
@@ -32,7 +32,6 @@ const HomeScreen = () => {
               price={product.price}
               imageURL={product.imageURL}
               logoURL={product.logoURL}
-              symbolURL={product.symbolURL}
               setType={product.setType}
               block={product.block}
               releaseDate={product.releaseDate}

@@ -25,16 +25,12 @@ const productSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    symbolURL: {
-        type: String,
-        required: true
-    },
     setType: {
         type: String,
         required: true
     },
     releaseDate: {
-        type: Date,
+        type: String,
         required: true
     },
     block: {
