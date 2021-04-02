@@ -51,11 +51,13 @@ const CartScreen = () => {
     <>
       <div className="cartscreen">
         <div className="cartscreen-left">
-            <h4>Your Shopping Cart</h4>
-
+            <h2>Your Shopping Cart</h2>
           {cartItems.length === 0 ? (
-            <div>
-              Your Cart Is Empty <Link to="/">Go Back</Link>
+            <div className="cartscreen-empty">
+                <h2>Is Currently Empty</h2>
+                <div className="cartscreen-empty-back">
+                    <Link to="/">Continue Shopping</Link>
+                </div>
             </div>
           ) : (
             cartItems.map((item) => (
@@ -71,13 +73,13 @@ const CartScreen = () => {
 
         <div className="cartscreen-right">
           <div className="cartscreen-info">
-            <h2>Order Summary</h2>
-            <p>Subtotal ({getCartCount()}) Items</p>
-            <p>${getCartSubTotal()}</p>
-            <p>+${getTax()} Tax</p>
-            <p>Your Total ${getTotal()}</p>
-          </div>
-          <div>
+              <div className="order-info">
+                <p>Order Summary</p>
+                <p>Subtotal ({getCartCount()}) Items</p>
+                <p>${getCartSubTotal()}</p>
+                <p>+${getTax()} Tax</p>
+                <p>Your Total: ${getTotal()}</p>
+              </div>
             <button>Place Your Order</button>
           </div>
         </div>

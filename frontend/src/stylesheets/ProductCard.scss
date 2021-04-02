@@ -57,6 +57,9 @@
     border-radius: 8px;
     cursor: pointer;
     padding: 3px;
+    &:hover {
+        opacity: 0.6;
+    }
 }
 
 .product-info {
