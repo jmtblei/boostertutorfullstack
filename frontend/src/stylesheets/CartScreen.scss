@@ -28,17 +28,19 @@
                 color: $red;
                 padding: 5px 0;
             }
+        }
 
-            .cartscreen-empty-back {
-                padding: 1rem 0;
-                a {
-                    text-decoration: none;
-                    color: $blue;
-                    font-weight: 600;
-                    font-size: 0.9rem;
-                    &:hover {
-                        color: $pink;
-                    }
+        .cartscreen-continue {
+            margin-top: 5px;
+            a {
+                text-decoration: none;
+                color: $black;
+                &:hover {
+                    color: $pink;
+                }
+
+                i {
+                    margin: 0 5px;
                 }
             }
         }

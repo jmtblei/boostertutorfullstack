@@ -35,6 +35,7 @@ const HomeScreen = () => {
               setType={product.setType}
               block={product.block}
               releaseDate={product.releaseDate}
+              countInStock={product.countInStock}
               productId={product._id}
             />
           ))

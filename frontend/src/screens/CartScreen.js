@@ -51,13 +51,10 @@ const CartScreen = () => {
     <>
       <div className="cartscreen">
         <div className="cartscreen-left">
-            <h2>Your Shopping Cart</h2>
+                <h2>Your Shopping Cart</h2>
           {cartItems.length === 0 ? (
             <div className="cartscreen-empty">
                 <h2>Is Currently Empty</h2>
-                <div className="cartscreen-empty-back">
-                    <Link to="/">Continue Shopping</Link>
-                </div>
             </div>
           ) : (
             cartItems.map((item) => (
@@ -69,6 +66,14 @@ const CartScreen = () => {
               />
             ))
           )}
+          <div className="cartscreen-continue">
+            <Link to="/">
+              <h4>
+                Continue shopping
+                <i className="fas fa-shopping-cart"></i>
+              </h4>
+            </Link>
+          </div>
         </div>
 
         <div className="cartscreen-right">
@@ -80,7 +85,7 @@ const CartScreen = () => {
                 <p>+${getTax()} Tax</p>
                 <p>Your Total: ${getTotal()}</p>
               </div>
-            <button>Place Your Order</button>
+            <button>Proceed to Checkout</button>
           </div>
         </div>
       </div>

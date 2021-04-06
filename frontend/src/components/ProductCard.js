@@ -4,20 +4,21 @@ import sampleBooster from "../1.jpg";
 
 const ProductCard = ({
     name,
+    description,
     price,
     imageURL,
     logoURL,
-    description,
-    releaseDate,
     setType,
     block,
-    productId
+    releaseDate,
+    countInStock,
+    productId,
 }) => {
     return (
         <div className="product">
-            {/* <img src={logoURL} alt={name} className="product-logo"/> */}
+            <img src={logoURL} alt={name} className="product-logo"/>
             <Link to={`/product/${productId}`}>
-                {/* <img src={imageURL} alt={name} /> */}
+                {/* <img src={imageURL} alt={name} className="product-img"/> */}
                 <img src={sampleBooster} alt={name} className="product-img"/>
             </Link>
             <div className="product-info">
