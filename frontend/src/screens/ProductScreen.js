@@ -78,11 +78,18 @@ const ProductScreen = ({ match, history }) => {
                             ))}
                             </select>
                         </p>
-                        <p>
-                            <button type="button" onClick={addToCartHandler}>
-                                Add To Cart
-                            </button>
-                        </p>
+                        <div className="product-av">
+                            {product.countInStock > 0 
+                                ?
+                                <button type="button" onClick={addToCartHandler} className="productbutton-av">
+                                    ADD TO CART
+                                </button>
+                                :
+                                <button type="button" className="productbutton-out">
+                                    OUT OF STOCK
+                                </button>
+                            }
+                        </div>
                     </div>
                 </div>
                 </>
