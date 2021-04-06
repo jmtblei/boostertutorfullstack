@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from "react"; 
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/actions/cartActions";
@@ -17,10 +18,12 @@ const ProductCard = ({
     productId,
     match
 }) => {
+    const [qty, setQty] = useState(1);
     const dispatch = useDispatch();
 
     const addToCartHandler = () => {
-        dispatch(addToCart(productId, 1));
+        dispatch(addToCart(productId, qty))
+        .then(setQty(qty+1))
     };
 
     return (
@@ -36,7 +39,6 @@ const ProductCard = ({
                 <p className="info-name">{name}</p>
                 <p className="info-price">${price}</p>
             </div>
-            
             <button 
                 onClick={addToCartHandler}
                 className="product-quickadd"
