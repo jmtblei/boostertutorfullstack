@@ -1,14 +1,12 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import sampleBooster from "../1.jpg";
 
 const CartItem = ({ item, qtyChangeHandler, removeHandler }) => {
   return (
     <div className="cartitem">
       <div className="cartitem-image">
         <Link to={`/product/${item.product}`}>    
-            <img src={sampleBooster} alt={item.name} />
-            {/* <img src={item.imageURL} alt={item.name} /> */}
+            <img src={item.imageURL} alt={item.name} />
         </Link>
       </div>
       <div className="cartitem-box">

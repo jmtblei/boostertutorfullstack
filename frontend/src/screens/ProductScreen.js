@@ -4,7 +4,6 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { getProductDetails } from "../redux/actions/productActions";
 import { addToCart } from "../redux/actions/cartActions";
-import sampleBooster from "../1.jpg";
 
 const ProductScreen = ({ match, history }) => {
     const [qty, setQty] = useState(1);
@@ -34,8 +33,7 @@ const ProductScreen = ({ match, history }) => {
                 <>
                 <div className="productscreen-left">
                     <div className="left-image">
-                        {/* <img src={product.imageURL} alt={product.name} /> */}
-                        <img src={sampleBooster} alt={product.name} />
+                        <img src={product.imageURL} alt={product.name} />
                     </div>
                     <div className="left-info">
                         <img src={product.logoURL} alt={product.name}/>
