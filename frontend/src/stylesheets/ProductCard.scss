@@ -85,7 +85,10 @@
     color: $off-white;
     background-color: $black;
     font-weight: bold;
-    cursor: pointer
+    cursor: pointer;
+    &:hover {
+        opacity: 0.6;
+    }
 }
 
 .product-out {
@@ -142,4 +145,7 @@
     font-weight: bold;
     text-align: center;
     cursor: no-drop;
+    &:hover {
+        opacity: 0.6;
+    }
 }
