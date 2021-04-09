@@ -12,7 +12,6 @@
         }
 
         .homescreen-title {
-            font-size: 1.5rem;
             color: $black;
             margin-left: 8px;
             text-shadow: 0 1px 4px $off-white;
@@ -27,26 +26,44 @@
         .homescreen-search {
             border: 1px solid $black;
             @include flex-centered;
-            margin-right: 8px;
+            margin: 0 20px;
             box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-
+            
             input {
                 padding: 10px;
                 width: 300px;
-
+                
                 @media (max-width: 700px) {
                     width: 200px;
                 }
             }
-
+            
             i {
                 padding: 0 10px;
                 color: $dark-gray;
             }
         }
     }
+    
+    .homescreen-sort {
+        @include flex-centered;
+        
+        @media (max-width: 630px) {
+            margin-top: 10px;
+        }
 
-
+        p {
+            font-size: .8rem;
+            font-weight: 600;
+        }
+        select {
+            border: 1px solid $black;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+            padding: 5px;
+            margin: 0 8px;
+        }
+    }
+    
     .homescreen-products {
         display: grid;
         grid-template-columns: repeat(4, 1fr);

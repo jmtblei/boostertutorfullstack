@@ -6,6 +6,9 @@ import ProductCard from "../components/ProductCard";
 import { getProducts as listProducts } from "../redux/actions/productActions";
 
 const HomeScreen = () => {
+  const [data, setData] = useState([]);
+  const [sortBy, setSortBy] = useState("dateNewOld");
+
   const [search, setSearch] = useState("");
   const [filteredBoosters, setFilteredBoosters] = useState([]);
 
@@ -19,22 +22,69 @@ const HomeScreen = () => {
   }, [dispatch]);
 
   useEffect(() => {
+    let sortArray = type => {
+      let types = {
+        dateNewOld: 'releaseDate',
+        dateOldNew: 'releaseDate',
+        priceLowHigh: 'price',
+        priceHighLow: 'price',
+        nameAZ: 'name',
+        nameZA: 'name',
+      };
+      let sortProperty = types[type];
+      switch (sortBy) {
+        case "dateNewOld": {
+          let sorted = [...products].sort((a, b) => b[sortProperty].localeCompare(a[sortProperty]));
+          return setData(sorted);
+        };
+        case "dateOldNew": {
+          let sorted = [...products].sort((a, b) => a[sortProperty].localeCompare(b[sortProperty]));
+          return setData(sorted);
+        };
+        case "nameAZ": {
+          let sorted = [...products].sort((a, b) => a[sortProperty].localeCompare(b[sortProperty]));
+          return setData(sorted);
+        };
+        case "nameZA": {
+          let sorted = [...products].sort((a, b) => b[sortProperty].localeCompare(a[sortProperty]));
+          return setData(sorted);
+        };
+        case "priceLowHigh": {
+          let sorted = [...products].sort((a, b) => a[sortProperty] - b[sortProperty]);
+          return setData(sorted);
+        };
+        case "priceHighLow": {
+          let sorted = [...products].sort((a, b) => b[sortProperty] - a[sortProperty]);
+          return setData(sorted);
+        };
+        default: {
+          return sortBy
+        };
+      };
+  };
+    sortArray(sortBy);
+  }, [sortBy, products]); 
+
+  useEffect(() => {
     setFilteredBoosters(
-      products.filter((product) =>
-        product.name.toLowerCase().includes(search.toLowerCase())
+      data.filter((x) =>
+        x.name.toLowerCase().includes(search.toLowerCase())
       )
     );
-  }, [search, products]);
+  }, [search, data]);
+
+  const sortHandler = (e) => {
+    setSortBy(e.target.value)
+  };
 
   const searchHandler = (e) => {
     setSearch(e.target.value)
-    console.log(e.target.value)
   };
 
   return (
     <div className="homescreen">
       <div className="homescreen-upper">
-        <h2 className="homescreen-title">Draft Boosters For Sale</h2>
+        <h4 className="homescreen-title">Displaying {filteredBoosters.length} Product(s)</h4>
         <div className="homescreen-search">
           <input 
             type="text"
@@ -42,6 +92,17 @@ const HomeScreen = () => {
             onChange={searchHandler}
           />
           <i class="fas fa-search"></i>
+        </div>
+        <div className="homescreen-sort">  
+          <p>Sort By:</p>
+          <select onChange={sortHandler}> 
+            <option value="dateNewOld">Newest to Oldest</option>
+            <option value="dateOldNew">Oldest to Newest</option>
+            <option value="priceLowHigh">Price: Low to High</option>
+            <option value="priceHighLow">Price: High to Low</option>
+            <option value="nameAZ">Name: A-Z</option>
+            <option value="nameZA">Name: Z-A</option>
+          </select>
         </div>
       </div>
       <div className="homescreen-products">

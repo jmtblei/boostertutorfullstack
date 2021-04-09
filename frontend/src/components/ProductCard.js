@@ -15,7 +15,6 @@ const ProductCard = ({
     releaseDate,
     countInStock,
     productId,
-    match
 }) => {
     const [qty, setQty] = useState(1);
     const dispatch = useDispatch();
