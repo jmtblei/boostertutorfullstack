@@ -26,7 +26,7 @@ const NavBar = ({ click }) => {
                 </li>
                 <li>
                     <Link to="/">
-                        <i class="fas fa-store"></i>
+                        <i className="fas fa-store"></i>
                         <span>
                             Shop
                         </span>

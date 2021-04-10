@@ -15,6 +15,7 @@ const ProductCard = ({
     releaseDate,
     countInStock,
     productId,
+    posts,
 }) => {
     const [qty, setQty] = useState(1);
     const dispatch = useDispatch();

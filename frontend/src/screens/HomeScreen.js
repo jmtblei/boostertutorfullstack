@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-
-import ProductCard from "../components/ProductCard";
 import { getProducts as listProducts } from "../redux/actions/productActions";
+import Pagination from "../components/Pagination";
+import PaginatedProducts from "../components/PaginatedProducts";
 
 const HomeScreen = () => {
   const [data, setData] = useState([]);
@@ -11,6 +11,9 @@ const HomeScreen = () => {
 
   const [search, setSearch] = useState("");
   const [filteredBoosters, setFilteredBoosters] = useState([]);
+  
+  const [currentPage, setCurrentPage] = useState(1);
+  const [productsPerPage] = useState(8);
 
   const dispatch = useDispatch();
 
@@ -81,17 +84,25 @@ const HomeScreen = () => {
     setSearch(e.target.value)
   };
 
+  const indexOfLastProduct = currentPage * productsPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+  const currentProducts = filteredBoosters.slice(indexOfFirstProduct, indexOfLastProduct);
+  const paginate = pageNumber => setCurrentPage(pageNumber);
+
   return (
     <div className="homescreen">
       <div className="homescreen-upper">
-        <h4 className="homescreen-title">Displaying {filteredBoosters.length} Product(s)</h4>
+        <div className="homescreen-title">
+          <p>{filteredBoosters.length} Product(s) Found</p>
+          <p>Displaying {currentProducts.length} Product(s)</p>
+        </div>
         <div className="homescreen-search">
           <input 
             type="text"
             placeholder="Search Booster Tutor"
             onChange={searchHandler}
           />
-          <i class="fas fa-search"></i>
+          <i className="fas fa-search"></i>
         </div>
         <div className="homescreen-sort">  
           <p>Sort By:</p>
@@ -105,31 +116,24 @@ const HomeScreen = () => {
           </select>
         </div>
       </div>
-      <div className="homescreen-products">
+      <>
         {loading ? (
           <h2>Loading...</h2>
         ) : error ? (
           <h2>{error}</h2>
         ) : (
           <>
-            {filteredBoosters.map((product) => (
-              <ProductCard
-                key={product._id}
-                name={product.name}
-                description={product.description}
-                price={product.price}
-                imageURL={product.imageURL}
-                logoURL={product.logoURL}
-                setType={product.setType}
-                block={product.block}
-                releaseDate={product.releaseDate}
-                countInStock={product.countInStock}
-                productId={product._id}
+              <Pagination
+                productsPerPage={productsPerPage}
+                totalProducts={filteredBoosters.length}
+                paginate={paginate}
               />
-            ))}
+              <PaginatedProducts
+                filteredBoosters={currentProducts}
+              />
           </>
         )}
-      </div>
+      </>
     </div>
   );
 };

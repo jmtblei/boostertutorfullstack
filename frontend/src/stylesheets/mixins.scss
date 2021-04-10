@@ -6,7 +6,7 @@
 @mixin flex-centered {
     display: flex;
     align-items: center;
-};
+}
 
 @mixin cart-badge {
     justify-content: center;
@@ -15,7 +15,7 @@
     border-radius: 50%;
     margin-left: 8px;
     font-size: 1rem;
-};
+}
 
 @mixin select-style {
     padding: 5px;
