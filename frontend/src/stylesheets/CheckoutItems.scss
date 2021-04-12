@@ -1,4 +1,4 @@
-.cartitem {
+.checkoutitem {
     width: 100%;
     padding: 0.5rem;
     display: flex;
@@ -12,14 +12,14 @@
         flex-direction: column;
     }
 
-    .cartitem-image img {
+    .checkoutitem-image img {
         max-height: 170px;
         &:hover {
             opacity: 0.6;
         }
     }
 
-    .cartitem-box {
+    .checkoutitem-box {
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -28,7 +28,7 @@
             flex-direction: column;
         }
 
-        .cartitem-left {
+        .checkoutitem-left {
             width: 50%;
             justify-content: flex-start;
 
@@ -38,7 +38,7 @@
             }
         }
 
-        .cartitem-right {
+        .checkoutitem-right {
             display: flex;
             justify-content: flex-end;
             text-align: center;
@@ -50,17 +50,16 @@
         }
     }
 
-    .cartitem-grid {
+    .checkoutitem-grid {
         margin: 10px;
         
         h4 {
             font-size: .7rem;
             padding-bottom: 8px;
             text-decoration: underline;
-            text-shadow: 0 1px 4px $off-white;
         }
         
-        .cartitem-name {
+        .checkoutitem-name {
             text-decoration: none;
             color: $black;
             :hover {
@@ -77,7 +76,7 @@
             @include select-style;
         }
 
-        .cartitem-remove {
+        .checkoutitem-remove {
             color: $blue;
             cursor: pointer;
         }
@@ -94,7 +93,7 @@
         }
 
         @media (max-width: 700px) {
-            .cartitem-grid {
+            .checkoutitem-grid {
                 align-content: flex-start;
             }
 
@@ -102,7 +101,7 @@
                 font-size: 0.8rem;
             }
 
-            .cartitem-name {
+            .checkoutitem-name {
                 font-size: 0.8rem;
             }
 
@@ -112,7 +111,7 @@
         }
 
         @media (max-width: 500px) {
-            .cartitem-grid {
+            .checkoutitem-grid {
                 align-content: center;
             }
             
@@ -120,7 +119,7 @@
                 font-size: 0.6em;
             }
             
-            .cartitem-name {
+            .checkoutitem-name {
                 font-size: 0.8rem;
             }
 

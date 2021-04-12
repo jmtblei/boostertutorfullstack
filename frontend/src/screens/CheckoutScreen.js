@@ -141,7 +141,7 @@ const CheckoutScreen = () => {
                     <p>
                         This forms' input is disabled by default because this website does not sell any product, nor does it collect any personal information. It's for demo purposes only, so go ahead and place your "order"!
                     </p>
-                    <Link to="/">
+                    <Link to="/orderreview">
                         <button>Place Order</button>
                     </Link>
                 </div>

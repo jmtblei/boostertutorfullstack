@@ -9,6 +9,7 @@ import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
 import CartScreen from "./screens/CartScreen";
 import CheckoutScreen from "./screens/CheckoutScreen";
+import OrderReviewScreen from "./screens/OrderReviewScreen";
 import Footer from "./components/Footer";
 
 function App() {
@@ -26,9 +27,10 @@ function App() {
             <Route exact path="/product/:id" component={ProductScreen}/>
             <Route exact path="/cart" component={CartScreen}/>
             {/* @desc
-            implement private route for checkout
+            implement private route for checkout and orderreview
             */}
             <Route exact path="/checkout" component={CheckoutScreen}/>
+            <Route exact path="/orderreview" component={OrderReviewScreen}/>
           </Switch>
         </div>
       </Router>

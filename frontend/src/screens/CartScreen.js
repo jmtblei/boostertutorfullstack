@@ -26,20 +26,6 @@ const CartScreen = () => {
     return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
   };
 
-  const itemsInfo = cartItems.map((item) => (
-    {
-      name: item.name,
-      price: item.price,
-      qty: item.qty
-    }
-  ));
-
-  console.log(itemsInfo);
-
-  // const getItemCount = () => {
-  //   return itemsInfo
-  // }
-
   const getCartSubTotal = () => {
     return cartItems
       .reduce((price, item) => price + item.price * item.qty, 0)
@@ -60,7 +46,6 @@ const CartScreen = () => {
     return (subTotal + tax).toFixed(2);
   };
   
-
   return (
     <div className="cartscreen">
       <div className="cartscreen-left">
@@ -92,14 +77,22 @@ const CartScreen = () => {
         <></>
       ) : (
       <div className="cartscreen-right">
+          <h2>Order Summary</h2>
         <div className="cartscreen-info">
           <div className="order-info">
-            <p>Order Summary</p>
-            <p>Number of Items: ({getCartCount()})</p>
-            <p>Subtotal: ${getCartSubTotal()}</p>
-            <p>Estimated Tax: ${getTax()}</p>
-            <p>Your Total: ${getTotal()}</p>
+            <p>Number of Items:)</p>
+            <p>Subtotal:</p>
+            <p>Estimated Tax:</p>
+            <p>Your Total:</p>
           </div>
+          <div className="order-info">
+            <p>({getCartCount()})</p>
+            <p>${getCartSubTotal()}</p>
+            <p>${getTax()}</p>
+            <p>${getTotal()}</p>
+          </div>
+        </div>
+        <div className="cartscreen-button">
           <Link to="/checkout">
             <button>Proceed to Checkout</button>
           </Link>
