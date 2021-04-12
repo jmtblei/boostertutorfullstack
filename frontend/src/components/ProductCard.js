@@ -6,16 +6,11 @@ import { addToCart } from "../redux/actions/cartActions";
 
 const ProductCard = ({
     name,
-    description,
     price,
     imageURL,
     logoURL,
-    setType,
-    block,
-    releaseDate,
     countInStock,
     productId,
-    posts,
 }) => {
     const [qty, setQty] = useState(1);
     const dispatch = useDispatch();

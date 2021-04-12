@@ -26,6 +26,20 @@ const CartScreen = () => {
     return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
   };
 
+  const itemsInfo = cartItems.map((item) => (
+    {
+      name: item.name,
+      price: item.price,
+      qty: item.qty
+    }
+  ));
+
+  console.log(itemsInfo);
+
+  // const getItemCount = () => {
+  //   return itemsInfo
+  // }
+
   const getCartSubTotal = () => {
     return cartItems
       .reduce((price, item) => price + item.price * item.qty, 0)
@@ -48,48 +62,51 @@ const CartScreen = () => {
   
 
   return (
-    <>
-      <div className="cartscreen">
-        <div className="cartscreen-left">
-                <h2>Your Shopping Cart</h2>
-          {cartItems.length === 0 ? (
-            <div className="cartscreen-empty">
-                <h2>Is Currently Empty</h2>
-            </div>
-          ) : (
-            cartItems.map((item) => (
-              <CartItem
-                key={item.product}
-                item={item}
-                qtyChangeHandler={qtyChangeHandler}
-                removeHandler={removeFromCartHandler}
-              />
-            ))
-          )}
-          <div className="cartscreen-continue">
-            <Link to="/">
-              <h4>
-                Continue shopping
-                <i className="fas fa-shopping-cart"></i>
-              </h4>
-            </Link>
+    <div className="cartscreen">
+      <div className="cartscreen-left">
+        <h2>Your Shopping Cart</h2>
+        {cartItems.length === 0 ? (
+          <div className="cartscreen-empty">
+            <h2>Is Currently Empty</h2>
           </div>
-        </div>
-
-        <div className="cartscreen-right">
-          <div className="cartscreen-info">
-              <div className="order-info">
-                <p>Order Summary</p>
-                <p>Subtotal ({getCartCount()}) Items</p>
-                <p>${getCartSubTotal()}</p>
-                <p>+${getTax()} Tax</p>
-                <p>Your Total: ${getTotal()}</p>
-              </div>
-            <button>Proceed to Checkout</button>
-          </div>
+        ) : (
+          cartItems.map((item) => (
+            <CartItem
+              key={item.product}
+              item={item}
+              qtyChangeHandler={qtyChangeHandler}
+              removeHandler={removeFromCartHandler}
+            />
+          ))
+        )}
+        <div className="cartscreen-continue">
+          <Link to="/">
+            <h4>
+              Continue shopping
+              <i className="fas fa-shopping-cart"></i>
+            </h4>
+          </Link>
         </div>
       </div>
-    </>
+      {cartItems.length === 0 ? (
+        <></>
+      ) : (
+      <div className="cartscreen-right">
+        <div className="cartscreen-info">
+          <div className="order-info">
+            <p>Order Summary</p>
+            <p>Number of Items: ({getCartCount()})</p>
+            <p>Subtotal: ${getCartSubTotal()}</p>
+            <p>Estimated Tax: ${getTax()}</p>
+            <p>Your Total: ${getTotal()}</p>
+          </div>
+          <Link to="/checkout">
+            <button>Proceed to Checkout</button>
+          </Link>
+        </div>
+      </div>
+      )}
+    </div>
   );
 };
 

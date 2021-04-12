@@ -21,6 +21,11 @@ const Footer = () => {
                             <i className="fab fa-linkedin"></i>
                         </div>
                     </a>
+                    <a href="https://bensonlei.com/" target="_blank" rel="noopener noreferrer">
+                        <div className="footer-icons">
+                            <i className="fas fa-user"></i>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

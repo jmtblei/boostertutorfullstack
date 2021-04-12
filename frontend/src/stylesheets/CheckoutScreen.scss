@@ -1,0 +1,120 @@
+.checkout {
+    display: flex;
+    justify-content: center;
+
+    form {
+        max-width: 400px;
+
+        @media (max-width: 500px) {
+            width: 90%;
+        }
+
+
+        h2 {
+            margin: 10px 0;
+            text-shadow: 0 1px 4px $off-white;
+        }
+
+        input {
+            border: 1px solid $dark-gray;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px;
+        }
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .full-name {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 500px) {
+            flex-direction: column;
+        }
+
+    }
+
+    .shipping-address {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shipping-country {
+        display: flex;
+        flex-direction: row;
+
+        @media (max-width: 500px) {
+            flex-direction: column;
+        }
+
+        .shipping-country-select {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid $dark-gray;
+            border-radius: 5px;
+            padding: 8px;
+            margin: 5px;
+            
+
+            label {
+                margin-left: 4px;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .payment-info {
+        display: flex;
+        flex-direction: column;
+
+        .payment-details {
+            display: flex;
+            flex-direction: row;
+
+            input {
+                width: 100%;
+            }
+            
+            .expiry-select {
+                display: flex;
+                flex-direction: column;
+                border: 1px solid $dark-gray;
+                border-radius: 5px;
+                padding: 8px;
+                margin: 5px;
+    
+                label {
+                    margin-left: 4px;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .form-bottom {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px;
+
+        p {
+            font-size: 0.7rem;
+            width: 70%;
+        }
+
+        button {
+            padding: 10px;
+            font-weight: 600;
+            background: $off-white;
+            cursor: pointer;
+            border: 1px solid $black;
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+        
+}
