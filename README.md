@@ -15,6 +15,5 @@ Products can be added to carts, whose state is tracked in the reducer and stored
 
 ## Front-end
 ![](demo/filtersortpaginate.gif)
-Dynamic rendering of search filter, sort by, and paginated products, as well as full mobile-responsivity.
-
 ![](demo.mobileresponsive.gif)
+Dynamic rendering of search filter, sort by, and paginated products, as well as full mobile-responsivity.
