@@ -15,5 +15,6 @@ Products can be added to carts, whose state is tracked in the reducer and stored
 
 ### Front-end
 ![](demo/filtersortpaginate.gif)
-Dynamic rendering of search filter, sort by, and paginated products using custom React hooks, and full mobile-responsivity with hamburger menu dropdown and backdrop.
+Dynamic rendering of search filter, sort by, and paginated products using custom React hooks, and full mobile-responsivity with hamburger menu dropdown and backdrop.  
+
 ![](demo/mobileresponsive.gif)
