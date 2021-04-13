@@ -13,7 +13,10 @@ Simple, nonrelational database to fetch all products with a single axios api cal
 ![](demo/productscart.gif)
 Products can be added to carts, whose state is tracked in the reducer and stored in localStorage. This results in no repeated data being stored in the backend, and only one centralized operation. Additional benefits to this should additional beneits such as user auth be implemented, is that this allows cart access to anonymous users, while being fetchable when they register/log in.
 
-## Front-end
+### Front-end
 ![](demo/filtersortpaginate.gif)
+Dynamic rendering of search filter, sort by, and paginated products using custom React hooks. 
+
+### Mobile-design
 ![](demo.mobileresponsive.gif)
-Dynamic rendering of search filter, sort by, and paginated products, as well as full mobile-responsivity.
+Full mobile-responsivity with hamburger menu dropdown and backdrop.
