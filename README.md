@@ -1,5 +1,5 @@
 # The Booster Tutor
-### [Live Demon] (https://theboostertutor-demo.herokuapp.com/ "Live Demo of The Booster Tutor)
+### [Live Demo] (https://theboostertutor-demo.herokuapp.com/ "Live Demo of The Booster Tutor)
 
 ## Summary:
 This is a pet-project e-commerce site focused around the sale of Magic: The Gathering booster packs. Written with React / Redux frontend, Node, Express, and MongoDB backend from scratch.
