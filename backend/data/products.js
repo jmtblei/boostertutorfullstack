@@ -1090,7 +1090,7 @@ const products = [
     },
     {
         name: "War of the Spark",
-        description: "The eighty-first Magic: The Gathering expansion set. Officially, it is not part of a block. However, it is part of a series of three that is set on the same world, unofficially called the Guilds of Ravnica block. The storyline is told through a collection of web articles and e-books. Contains 16 (of 264 possible, with one card being a marketing card and another one being a planeswalker or any rarity) black-bordered cards.",
+        description: "The eighty-first Magic: The Gathering expansion set. Officially, it is not part of a block. However, it is part of a series of three that is set on the same world, unofficially called the Guilds of Ravnica block. The storyline is told through a collection of web articles and e-books. Contains 16 (of 264 possible, with one card being a marketing card and another one being a planeswalker of any rarity) black-bordered cards.",
         price: 5,
         countInStock: 20,
         imageURL: "https://mtgboosters.s3-us-west-1.amazonaws.com/expoboosters/100.jpg",
@@ -1112,7 +1112,7 @@ const products = [
     },
     {
         name: "Throne of Eldraine",
-        description: "The eighty-second Magic: The Gathering expansion set. The storyline is told through a collection of web articles and e-books. This set introduced premiums of showcase alternate art, card frames, and borderless cards. Contains 16 (of 269 possible, with one card being a marketing card and another one being a planeswalker or any rarity) black-bordered cards.",
+        description: "The eighty-second Magic: The Gathering expansion set. The storyline is told through a collection of web articles and e-books. This set introduced premiums of showcase alternate art, card frames, and borderless cards. Contains 16 (of 269 possible, with one card being a marketing card) black-bordered cards.",
         price: 4,
         countInStock: 20,
         imageURL: "https://mtgboosters.s3-us-west-1.amazonaws.com/expoboosters/102.jpg",
@@ -1123,7 +1123,7 @@ const products = [
     },
     {
         name: "Theros Beyond Death",
-        description: "The eighty-third Magic: The Gathering expansion set. The storyline is told through a collection of web articles and e-books. Contains 16 (of 254 possible, with one card being a marketing card and another one being a planeswalker or any rarity) black-bordered cards.",
+        description: "The eighty-third Magic: The Gathering expansion set. The storyline is told through a collection of web articles and e-books. Contains 16 (of 254 possible, with one card being a marketing card) black-bordered cards.",
         price: 3,
         countInStock: 20,
         imageURL: "https://mtgboosters.s3-us-west-1.amazonaws.com/expoboosters/103.jpg",
@@ -1134,7 +1134,7 @@ const products = [
     },
     {
         name: "Ikoria: Lair of Behemoths",
-        description: "The eighty-fourth Magic: The Gathering expansion set. The storyline is told through a collection of web articles and e-books. Contains 16 (of 274 possible, with one card being a marketing card and another one being a planeswalker or any rarity) black-bordered cards.",
+        description: "The eighty-fourth Magic: The Gathering expansion set. The storyline is told through a collection of web articles and e-books. Contains 16 (of 274 possible, with one card being a marketing card) black-bordered cards.",
         price: 3,
         countInStock: 20,
         imageURL: "https://mtgboosters.s3-us-west-1.amazonaws.com/expoboosters/104.jpg",
@@ -1156,7 +1156,7 @@ const products = [
     },
     {
         name: "Zendikar Rising",
-        description: "The eighty-fifth Magic: The Gathering expansion set. The storyline is told through a collection of web articles and e-books. Contains 16 (of 280 possible, with one card being a marketing card and another one being a planeswalker or any rarity) black-bordered cards.",
+        description: "The eighty-fifth Magic: The Gathering expansion set. The storyline is told through a collection of web articles and e-books. Contains 16 (of 280 possible, with one card being a marketing card) black-bordered cards.",
         price: 3,
         countInStock: 20,
         imageURL: "https://mtgboosters.s3-us-west-1.amazonaws.com/expoboosters/106.jpg",
@@ -1167,13 +1167,24 @@ const products = [
     },
     {
         name: "Kaldheim",
-        description: "The eighty-sixth Magic: The Gathering expansion set. The storyline is told through a collection of web articles and e-books. Contains 16 (of 285 possible, with one card being a marketing card and another one being a planeswalker or any rarity) black-bordered cards.",
+        description: "The eighty-sixth Magic: The Gathering expansion set. The storyline is told through a collection of web articles and e-books. Contains 16 (of 285 possible, with one card being a marketing card) black-bordered cards.",
         price: 4,
         countInStock: 20,
         imageURL: "https://mtgboosters.s3-us-west-1.amazonaws.com/expoboosters/107.jpg",
         logoURL: "https://mtgboosters.s3-us-west-1.amazonaws.com/expologos/107.png",
         setType: "Non-block Expansion",
         releaseDate: "2021-02-05",
+        block: "Stand-Alone",
+    },
+    {
+        name: "Strixhaven: School of Mages",
+        description: "The eighty-seventh Magic: The Gathering expansion set. The storyline is told through a collection of web articles and e-books. Contains 16 (of 275 possible, with one card being a marketing card) black-bordered cards.",
+        price: 3,
+        countInStock: 20,
+        imageURL: "https://mtgboosters.s3-us-west-1.amazonaws.com/expoboosters/108.jpg",
+        logoURL: "https://mtgboosters.s3-us-west-1.amazonaws.com/expologos/108.png",
+        setType: "Non-block Expansion",
+        releaseDate: "2021-04-23",
         block: "Stand-Alone",
     },
     //@desc core set bp
