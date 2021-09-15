@@ -11,14 +11,14 @@ const CheckoutScreen = () => {
                         type="email"
                         id=""
                         name=""
-                        placeholder="Email"
+                        placeholder="Email *"
                         disabled
                     />
                     <input 
                         type="number"
                         id=""
                         name=""
-                        placeholder="Phone (optional)"
+                        placeholder="Phone"
                         disabled
                     />
                 </div>
@@ -28,14 +28,14 @@ const CheckoutScreen = () => {
                         type="text"
                         id=""
                         name=""
-                        placeholder="First name"
+                        placeholder="First name *"
                         disabled
                     />
                     <input 
                         type="text"
                         id=""
                         name=""
-                        placeholder="Last name"
+                        placeholder="Last name *"
                         disabled
                     />
                 </div>
@@ -44,28 +44,28 @@ const CheckoutScreen = () => {
                         type="text"
                         id=""
                         name=""
-                        placeholder="Company (optional)"
+                        placeholder="Company"
                         disabled
                     />
                     <input 
                         type="text"
                         id=""
                         name=""
-                        placeholder="Address"
+                        placeholder="Address *"
                         disabled
                     />
                     <input 
                         type="text"
                         id=""
                         name=""
-                        placeholder="Apartment, suite, etc. (optional)"
+                        placeholder="Apartment, suite, etc."
                         disabled
                     />
                     <input 
                         type="text"
                         id=""
                         name=""
-                        placeholder="City"
+                        placeholder="City *"
                         disabled
                     />
                 </div>
@@ -73,20 +73,20 @@ const CheckoutScreen = () => {
                     <div className="shipping-country-select">
                         <label>Country/Region</label>
                         <select disabled>
-                            <option>United States</option>
+                            <option>United States *</option>
                         </select>
                     </div>
                     <div className="shipping-country-select">
                         <label>State</label>
                         <select disabled>
-                            <option>State</option>
+                            <option>State *</option>
                         </select>
                     </div>
                     <input 
                         type="number"
                         id=""
                         name=""
-                        placeholder="ZIP code"
+                        placeholder="ZIP code *"
                         disabled
                     />
                 </div>
@@ -96,14 +96,14 @@ const CheckoutScreen = () => {
                         type="text"
                         id=""
                         name=""
-                        placeholder="Cardholder's first name"
+                        placeholder="Cardholder's first name *"
                         disabled
                     />
                     <input 
                         type="text"
                         id=""
                         name=""
-                        placeholder="Cardholder's last name"
+                        placeholder="Cardholder's last name *"
                         disabled
                     />
                 </div>
@@ -112,27 +112,27 @@ const CheckoutScreen = () => {
                         type="number"
                         id=""
                         name=""
-                        placeholder="16-Digit credit card number"
+                        placeholder="16-Digit credit card number *"
                         disabled
                     />
                     <div className="payment-details">
                         <div className="expiry-select">
                             <label>Month</label>
                             <select disabled>
-                                <option>MM</option>
+                                <option>MM *</option>
                             </select>
                         </div>
                         <div className="expiry-select">
                             <label>Year</label>
                             <select disabled>
-                                <option>YYYY</option>
+                                <option>YYYY *</option>
                             </select>
                         </div>
                         <input 
                             type="number"
                             id=""
                             name=""
-                            placeholder="CVV"
+                            placeholder="CVV *"
                             disabled
                         />
                     </div>
@@ -140,6 +140,8 @@ const CheckoutScreen = () => {
                 <div className="form-bottom">
                     <p>
                         This forms' input is disabled by default because this website does not sell any product, nor does it collect any personal information. It's for demo purposes only, so go ahead and place your "order"!
+                        <br/>
+                        * denotes a required field
                     </p>
                     <Link to="/orderreview">
                         <button>Place Order</button>
