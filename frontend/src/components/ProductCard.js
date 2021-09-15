@@ -2,6 +2,9 @@ import React from 'react';
 import { useState } from "react"; 
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css'; 
+
 import { addToCart } from "../redux/actions/cartActions";
 
 const ProductCard = ({
@@ -16,8 +19,13 @@ const ProductCard = ({
     const dispatch = useDispatch();
 
     const addToCartHandler = () => {
-        dispatch(addToCart(productId, qty))
-        .then(setQty(qty+1))
+        dispatch(addToCart(productId, qty));
+        setQty(qty+1);
+        toast.success(`${name} Booster added to cart`,
+        {
+            position: toast.POSITION.BOTTOM_RIGHT,
+            autoClose:3000
+        });
     };
 
     return (
@@ -38,6 +46,7 @@ const ProductCard = ({
             >
                 ADD TO CART
             </button>
+            <ToastContainer />
         </div>
             :
             <div className="product-out">

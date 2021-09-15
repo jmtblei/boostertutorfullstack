@@ -95,6 +95,7 @@ const HomeScreen = () => {
         <div className="homescreen-title">
           <p>{filteredBoosters.length} Product(s) Found</p>
           <p>Displaying {currentProducts.length} Product(s)</p>
+          <p>On Page {currentPage}</p>
         </div>
         <div className="homescreen-search">
           <input 
