@@ -21,7 +21,7 @@ const ProductCard = ({
     const addToCartHandler = () => {
         dispatch(addToCart(productId, qty));
         setQty(qty+1);
-        toast.success(`${name} Booster added to cart`,
+        toast.success(`${name} booster pack added to cart`,
         {
             position: toast.POSITION.BOTTOM_RIGHT,
             autoClose:3000
