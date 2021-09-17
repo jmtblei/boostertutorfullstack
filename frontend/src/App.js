@@ -26,9 +26,6 @@ function App() {
             <Route exact path="/" component={HomeScreen}/>
             <Route exact path="/product/:id" component={ProductScreen}/>
             <Route exact path="/cart" component={CartScreen}/>
-            {/* @desc
-            implement private route for checkout and orderreview
-            */}
             <Route exact path="/checkout" component={CheckoutScreen}/>
             <Route exact path="/orderreview" component={OrderReviewScreen}/>
           </Switch>

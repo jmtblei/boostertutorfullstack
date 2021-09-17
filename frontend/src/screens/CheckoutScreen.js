@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-// import { Link } from "react-router-dom";
+import React, { useState } from 'react';
 import AnimateForm from "../components/AnimateForm";
 
 const CheckoutScreen = ({ history }) => {
@@ -16,7 +15,6 @@ const CheckoutScreen = ({ history }) => {
         event.preventDefault()
         setPlacedOrder(true);
         orderPush()
-        console.log(placedOrder, "it fired")
     };
 
     return (
