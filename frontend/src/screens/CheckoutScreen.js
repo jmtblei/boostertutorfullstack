@@ -1,141 +1,239 @@
-import React from 'react';
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+// import { Link } from "react-router-dom";
+import AnimateForm from "../components/AnimateForm";
 
-const CheckoutScreen = () => {
+const CheckoutScreen = ({ history }) => {
+    const [placedOrder, setPlacedOrder] = useState(false);
+
+    const orderPush = () => {
+        const push = setTimeout(() => {
+            history.push(`/orderreview`)      
+        }, 7000);
+        return push;
+    };
+
+    const orderHandler = (event) => {
+        event.preventDefault()
+        setPlacedOrder(true);
+        orderPush()
+        console.log(placedOrder, "it fired")
+    };
+
     return (
         <div className="checkout">
             <form>
                 <h2>Contact Infomation</h2>
                 <div className="contact-info">
-                    <input 
-                        type="email"
-                        id=""
-                        name=""
-                        placeholder="Email *"
-                        disabled
-                    />
-                    <input 
-                        type="number"
-                        id=""
-                        name=""
-                        placeholder="Phone"
-                        disabled
-                    />
+                    { !placedOrder ? 
+                    <>
+                        <input 
+                            type="email"
+                            id=""
+                            name=""
+                            placeholder="Email *"
+                            disabled
+                        />
+                        <input 
+                            type="number"
+                            id=""
+                            name=""
+                            placeholder="Phone"
+                            disabled
+                        />
+                    </>
+                    :
+                    <>
+                        <AnimateForm text="SpikeTournamentGrinder@wizards.com"/>
+                        <AnimateForm text="1-800-324-6496"/>
+                    </>
+                    }
                 </div>
                 <h2>Shipping Information</h2>
                 <div className="full-name">     
-                    <input 
-                        type="text"
-                        id=""
-                        name=""
-                        placeholder="First name *"
-                        disabled
-                    />
-                    <input 
-                        type="text"
-                        id=""
-                        name=""
-                        placeholder="Last name *"
-                        disabled
-                    />
+                    { !placedOrder ?
+                    <>
+                        <input 
+                            type="text"
+                            id=""
+                            name=""
+                            placeholder="First name *"
+                            disabled
+                        />
+                        <input 
+                            type="text"
+                            id=""
+                            name=""
+                            placeholder="Last name *"
+                            disabled
+                        />
+                    </>
+                    :
+                    <>
+                        <AnimateForm text="Spike"/>
+                        <AnimateForm text="TG"/>
+                    </>
+                    }
                 </div>
                 <div className="shipping-address">
-                    <input 
-                        type="text"
-                        id=""
-                        name=""
-                        placeholder="Company"
-                        disabled
-                    />
-                    <input 
-                        type="text"
-                        id=""
-                        name=""
-                        placeholder="Address *"
-                        disabled
-                    />
-                    <input 
-                        type="text"
-                        id=""
-                        name=""
-                        placeholder="Apartment, suite, etc."
-                        disabled
-                    />
-                    <input 
-                        type="text"
-                        id=""
-                        name=""
-                        placeholder="City *"
-                        disabled
-                    />
+                    { !placedOrder ?
+                    <>
+                        <input 
+                            type="text"
+                            id=""
+                            name=""
+                            placeholder="Company"
+                            disabled
+                        />
+                        <input 
+                            type="text"
+                            id=""
+                            name=""
+                            placeholder="Address *"
+                            disabled
+                        />
+                        <input 
+                            type="text"
+                            id=""
+                            name=""
+                            placeholder="Apartment, suite, etc."
+                            disabled
+                        />
+                        <input 
+                            type="text"
+                            id=""
+                            name=""
+                            placeholder="City *"
+                            disabled
+                        />
+                    </>
+                    :
+                    <>
+                        <AnimateForm text="Wizards of The Coast"/>
+                        <AnimateForm text="1600 Lind Avenue, South West"/>
+                        <AnimateForm text="Suite 400"/>
+                        <AnimateForm text="Renton"/>
+                    </>
+                    }
                 </div>
-                <div className="shipping-country">    
-                    <div className="shipping-country-select">
-                        <label>Country/Region</label>
-                        <select disabled>
-                            <option>United States *</option>
-                        </select>
-                    </div>
-                    <div className="shipping-country-select">
-                        <label>State</label>
-                        <select disabled>
-                            <option>State *</option>
-                        </select>
-                    </div>
-                    <input 
-                        type="number"
-                        id=""
-                        name=""
-                        placeholder="ZIP code *"
-                        disabled
-                    />
-                </div>
-                <h2>Payment Information</h2>
-                <div className="full-name">     
-                    <input 
-                        type="text"
-                        id=""
-                        name=""
-                        placeholder="Cardholder's first name *"
-                        disabled
-                    />
-                    <input 
-                        type="text"
-                        id=""
-                        name=""
-                        placeholder="Cardholder's last name *"
-                        disabled
-                    />
-                </div>
-                <div className="payment-info">    
-                    <input 
-                        type="number"
-                        id=""
-                        name=""
-                        placeholder="16-Digit credit card number *"
-                        disabled
-                    />
-                    <div className="payment-details">
-                        <div className="expiry-select">
-                            <label>Month</label>
+                <div className="shipping-country">
+                    { !placedOrder ?
+                    <>  
+                        <div className="shipping-country-select">
+                            <label>Country/Region</label>
                             <select disabled>
-                                <option>MM *</option>
+                                <option>United States *</option>
                             </select>
                         </div>
-                        <div className="expiry-select">
-                            <label>Year</label>
+                        <div className="shipping-country-select">
+                            <label>State</label>
                             <select disabled>
-                                <option>YYYY *</option>
+                                <option>State *</option>
                             </select>
                         </div>
                         <input 
                             type="number"
                             id=""
                             name=""
-                            placeholder="CVV *"
+                            placeholder="ZIP code *"
                             disabled
                         />
-                    </div>
+                    </>
+                    :
+                    <>
+                        <div className="shipping-country-select">
+                            <label>Country/Region</label>
+                            <select  disabled>
+                                <option>United States *</option>
+                            </select>
+                        </div>
+                        <div className="shipping-country-select">
+                            <label>State</label>
+                            <select disabled>
+                                <option>WA</option>
+                            </select>
+                        </div>
+                        <AnimateForm text="98057"/>
+                    </>
+                    }  
+                </div>
+                <h2>Payment Information</h2>
+                <div className="full-name">  
+                    { !placedOrder ? 
+                    <>
+                        <input 
+                            type="text"
+                            id=""
+                            name=""
+                            placeholder="Cardholder's first name *"
+                            disabled
+                        />
+                        <input 
+                            type="text"
+                            id=""
+                            name=""
+                            placeholder="Cardholder's last name *"
+                            disabled
+                        />
+                    </>
+                    :
+                    <>
+                        <AnimateForm text="Spike"/>
+                        <AnimateForm text="TG"/>
+                    </>
+                    }
+                </div>
+                <div className="payment-info">  
+                    { !placedOrder ? 
+                    <>
+                        <input 
+                            type="number"
+                            id=""
+                            name=""
+                            placeholder="16-Digit credit card number *"
+                            disabled
+                        />
+                        <div className="payment-details">
+                            <div className="expiry-select">
+                                <label>Month</label>
+                                <select disabled>
+                                    <option>MM *</option>
+                                </select>
+                            </div>
+                            <div className="expiry-select">
+                                <label>Year</label>
+                                <select disabled>
+                                    <option>YYYY *</option>
+                                </select>
+                            </div>
+                            <input 
+                                type="number"
+                                id=""
+                                name=""
+                                placeholder="CVV *"
+                                disabled
+                            />
+                        </div>
+                    </>
+                    :
+                    <>
+                        <AnimateForm text="Renton"/>
+                        <div className="payment-details">
+                            <div className="expiry-select">
+                                <label>Month</label>
+                                <select disabled>
+                                    <option>08</option>
+                                </select>
+                            </div>
+                            <div className="expiry-select">
+                                <label>Year</label>
+                                <select disabled>
+                                    <option>1993</option>
+                                </select>
+                            </div>
+                            <AnimateForm text="123"/>
+                        </div>
+                    </>
+                    }
                 </div>
                 <div className="form-bottom">
                     <p>
@@ -143,9 +241,11 @@ const CheckoutScreen = () => {
                         <br/>
                         * denotes a required field
                     </p>
-                    <Link to="/orderreview">
-                        <button>Place Order</button>
-                    </Link>
+                        { !placedOrder ?
+                        <button onClick={orderHandler}>Place Order</button>
+                        :
+                        <button disabled>Place Order</button>
+                        }
                 </div>
             </form>
         </div>

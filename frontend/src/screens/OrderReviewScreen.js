@@ -58,7 +58,7 @@ const OrderReviewScreen = () => {
                 <div className="order-info">
                     <p>Number of Items:)</p>
                     <p>Subtotal:</p>
-                    <p>Estimated Tax:</p>
+                    <p>Tax Collected:</p>
                     <p>Your Total:</p>
                 </div>
                 <div className="order-info">
