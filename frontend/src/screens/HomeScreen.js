@@ -13,7 +13,7 @@ const HomeScreen = () => {
   const [filteredBoosters, setFilteredBoosters] = useState([]);
   
   const [currentPage, setCurrentPage] = useState(1);
-  const [productsPerPage] = useState(8);
+  const [productsPerPage, setProductsPerPage] = useState(12);
 
   const dispatch = useDispatch();
 
@@ -93,28 +93,30 @@ const HomeScreen = () => {
     <div className="homescreen">
       <div className="homescreen-upper">
         <div className="homescreen-title">
-          <p>{filteredBoosters.length} Product(s) Found</p>
-          <p>Displaying {currentProducts.length} Product(s)</p>
-          <p>On Page {currentPage}</p>
-        </div>
-        <div className="homescreen-search">
-          <input 
-            type="text"
-            placeholder="Search Booster Tutor"
-            onChange={searchHandler}
-          />
-          <i className="fas fa-search"></i>
+          <p>{indexOfFirstProduct} - {indexOfLastProduct} of {filteredBoosters.length} Products</p>
+          <p>Displaying {currentPage} of {Math.ceil(filteredBoosters.length / productsPerPage)} pages</p>
         </div>
         <div className="homescreen-sort">  
-          <p>Sort By:</p>
-          <select onChange={sortHandler}> 
-            <option value="dateNewOld">Newest to Oldest</option>
-            <option value="dateOldNew">Oldest to Newest</option>
-            <option value="priceLowHigh">Price: Low to High</option>
-            <option value="priceHighLow">Price: High to Low</option>
-            <option value="nameAZ">Name: A-Z</option>
-            <option value="nameZA">Name: Z-A</option>
-          </select>
+          <p>Show: 
+              <select 
+                onChange={(e) => setProductsPerPage(e.target.value)} 
+                value={currentProducts.length}
+              >
+                <option value="12">12 per page</option>
+                <option value="24">24 per page</option>
+                <option value="36">36 per page</option>
+              </select>
+          </p>
+          <p>Sort By:
+            <select onChange={sortHandler}> 
+              <option value="dateNewOld">Newest to Oldest</option>
+              <option value="dateOldNew">Oldest to Newest</option>
+              <option value="priceLowHigh">Price: Low to High</option>
+              <option value="priceHighLow">Price: High to Low</option>
+              <option value="nameAZ">Name: A-Z</option>
+              <option value="nameZA">Name: Z-A</option>
+            </select>
+          </p>
         </div>
       </div>
       <>
@@ -124,11 +126,21 @@ const HomeScreen = () => {
           <h2>{error}</h2>
         ) : (
           <>
+            <div className="homescreen-lower">
+              <div className="homescreen-search">
+                <input 
+                  type="text"
+                  placeholder="Search Booster Tutor"
+                  onChange={searchHandler}
+                />
+                <i className="fas fa-search"></i>
+              </div>
               <Pagination
                 productsPerPage={productsPerPage}
                 totalProducts={filteredBoosters.length}
                 paginate={paginate}
               />
+            </div>
               <PaginatedProducts
                 filteredBoosters={currentProducts}
               />
