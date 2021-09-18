@@ -42,7 +42,7 @@ const CheckoutScreen = ({ history }) => {
                     :
                     <>
                         <AnimateForm text="SpikeTournamentGrinder@wizards.com"/>
-                        <AnimateForm text="1-800-324-6496"/>
+                        <AnimateForm text="1 800 324 6496"/>
                     </>
                     }
                 </div>
@@ -214,7 +214,7 @@ const CheckoutScreen = ({ history }) => {
                     </>
                     :
                     <>
-                        <AnimateForm text="Renton"/>
+                        <AnimateForm text="1234 5678 8765 4321"/>
                         <div className="payment-details">
                             <div className="expiry-select">
                                 <label>Month</label>
