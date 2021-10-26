@@ -12,7 +12,9 @@ const NavBar = ({ click }) => {
     return (
         <nav className="navbar">
             <div className="navbar-logo">
-                <h2>The Booster Tutor</h2>
+                <Link to="/">
+                    <h2>The Booster Tutor</h2>
+                </Link>
             </div>
             <ul className="navbar-links">
                 <li>
@@ -25,7 +27,7 @@ const NavBar = ({ click }) => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/">
+                    <Link to="/products">
                         <i className="fas fa-store"></i>
                         <span>
                             Shop

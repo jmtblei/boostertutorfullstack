@@ -69,7 +69,7 @@ const OrderReviewScreen = () => {
                 </div>
                 </div>
                 <div className="orderreview-button">
-                <Link to="/">
+                <Link to="/products">
                     <button onClick={emptyHandler}>Back to Shop</button>
                 </Link>
                 </div>

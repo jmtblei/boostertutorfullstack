@@ -65,7 +65,7 @@ const CartScreen = () => {
           ))
         )}
         <div className="cartscreen-continue">
-          <Link to="/">
+          <Link to="/products">
             <h4>
               Continue shopping
               <i className="fas fa-shopping-cart"></i>

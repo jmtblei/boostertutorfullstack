@@ -1,84 +1,24 @@
 .homescreen {
     @include screen-dimens;
 
-    select {
-        border: 1px solid $black;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-        padding: 5px;
-        margin: 10px;
-    }
-
-    .homescreen-upper {
+    .homescreen-banner {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 1rem;
+        justify-content: center;
+        padding-bottom: 5px;
 
-        @media (max-width: 630px) {
-            flex-direction: column;
-            align-items: center;
+        img {
+            max-height: 50%;
+            max-width: 50%;
         }
 
-        .homescreen-title {
-            color: $black;
-            margin-left: 8px;
-            text-shadow: 0 1px 4px $off-white;
-
-            @media (max-width: 630px) {
-                margin-bottom: 10px;
-                font-size: 1.2rem;
-                text-align: center;
+        @media (max-width: 1200px) {
+            img {
+                max-height: 452px;
+                max-width: 616px;
             }
 
-            p {
-                line-height: 150%;
-            }
-        }
-    }
-    
-    .homescreen-sort {
-        @include flex-centered;
-        
-        @media (max-width: 630px) {
-            margin-top: 10px;
-        }
-
-        p {
-            font-size: .8rem;
-            font-weight: 600;
-            text-align: center;
-        }
-    }
-
-    .homescreen-lower {
-        display: flex;
-        justify-content: space-between;
-        margin: 0 10px;
-
-        @media (max-width: 630px) {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .homescreen-search {
-            border: 1px solid $black;
-            @include flex-centered;
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-            max-height: 40px;
-            margin-bottom: 10px;
-            
-            input {
-                padding: 10px;
-                width: 300px;
-                
-                @media (max-width: 700px) {
-                    width: 200px;
-                }
-            }
-            
-            i {
-                padding: 0 10px;
-                color: $dark-gray;
+            .banner2 {
+                display: none;
             }
         }
     }
