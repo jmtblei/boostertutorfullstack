@@ -6,13 +6,19 @@ import { Link } from "react-router-dom";
 import CheckoutItems from "../components/CheckoutItems";
 import { emptyCart } from '../redux/actions/cartActions';
 
-const OrderReviewScreen = () => {
+const OrderReviewScreen = ({ history }) => {
     const dispatch = useDispatch();
 
     const cart = useSelector((state) => state.cart);
     const { cartItems } = cart;
 
-    useEffect(() => {}, []);
+    useEffect(() => {
+        const push = setTimeout(() => {
+            dispatch(emptyCart(cart));
+            history.push(`/`)
+        }, 7000);
+        return push;
+    },);
 
     const emptyHandler = () => {
         dispatch(emptyCart(cart));

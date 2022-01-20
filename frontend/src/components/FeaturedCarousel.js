@@ -55,7 +55,6 @@ const FeaturedCarousel = () => {
             transitionDuration={500}
             containerClass="carousel-container"
             removeArrowOnDeviceType={["tablet", "mobile"]}
-            dotListClass="custom-list"
         >
         {featuredProducts.map(product => (
             <ProductCard
