@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { ToastContainer } from "react-toastify";
+
 import { getProducts as listProducts } from "../redux/actions/productActions";
 import ProductCard from "./ProductCard";
 
@@ -73,6 +75,7 @@ const FeaturedCarousel = () => {
             ))}
         </Carousel>
         )}
+        <ToastContainer />
     </div>
   );
 };

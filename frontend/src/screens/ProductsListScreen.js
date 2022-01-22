@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getProducts as listProducts } from "../redux/actions/productActions";
 import Pagination from "../components/Pagination";
 import PaginatedProducts from "../components/PaginatedProducts";
+import { ToastContainer } from "react-toastify";
 
 const ProductsListScreen = () => {
   const [data, setData] = useState([]);
@@ -144,6 +145,7 @@ const ProductsListScreen = () => {
               <PaginatedProducts
                 filteredBoosters={currentProducts}
               />
+              <ToastContainer />
           </>
         )}
       </>

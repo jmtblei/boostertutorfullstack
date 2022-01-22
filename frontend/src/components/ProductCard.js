@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from "react"; 
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'; 
 
 import { addToCart } from "../redux/actions/cartActions";
@@ -46,7 +46,6 @@ const ProductCard = ({
             >
                 ADD TO CART
             </button>
-            <ToastContainer />
         </div>
             :
             <div className="product-out">
