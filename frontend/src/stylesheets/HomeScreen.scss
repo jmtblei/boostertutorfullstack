@@ -4,7 +4,7 @@
     .homescreen-banner {
         display: flex;
         justify-content: center;
-        padding-bottom: 5px;
+        background-color: $black;
 
         img {
             max-height: 50%;
@@ -17,9 +17,9 @@
                 max-width: 616px;
             }
 
-            .banner2 {
-                display: none;
-            }
+            // .banner2 {
+            //     display: none;
+            // }
         }
     }
 }
