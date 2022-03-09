@@ -36,10 +36,10 @@ const FeaturedCarousel = () => {
     }
 
   return (
-    <div>
-        <h4>
+    <div className="featured-carousel">
+        <h2>
             FEATURED PRODUCTS 
-        </h4>
+        </h2>
         {loading ? (
           <h2>Loading...</h2>
         ) : error ? (

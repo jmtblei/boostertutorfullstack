@@ -7,7 +7,7 @@ const HomeScreen = () => {
        <div className="homescreen">
            <div className="homescreen-banner">
                {/* <img src="https://mtgboosters.s3.us-west-1.amazonaws.com/boostertutor.jpg" alt=""/> */}
-               <img src="https://mtgboosters.s3.us-west-1.amazonaws.com/boostertutor2.jpg" alt="" className="banner2"/>
+               <img src="https://mtgboosters.s3.us-west-1.amazonaws.com/boostertutor2.jpg" alt=""/>
            </div>
            <FeaturedCarousel />
        </div>
