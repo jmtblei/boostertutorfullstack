@@ -18,3 +18,15 @@ Products can be added to carts, whose state is tracked in the reducer and stored
 Dynamic rendering of search filter, sort by, and paginated products using custom React hooks, and full mobile-responsivity with a menu dropdown and backdrop.  
 
 ![](demo/mobileresponsive.gif)
+
+## Installation Intructions:
+Clone this repository. In the root directory, install dependencies in with `npm install` or `yarn install`.
+
+## Environment Variables:
+In order for the app to function correctly, the user must provide their own API keys in their builds.
+* MONGO_URI - You must supply your own MongoDB Atlas URI string to connect to your DB.
+
+## Other Scripts:
+* In the root directory, run `npm run start`and `npm run server` to connect your backend server.
+* In the root directory, run `npm run data:import` to import the pre-seeded data cluster to your MongoDB Atlas connection.
+* In the root directory, run `npm run dev` to concurrently start your backend and frontend server.
