@@ -23,12 +23,12 @@
   },
   "homepage": "https://github.com/jmtblei/fullstackp#readme",
   "dependencies": {
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.12.0"
+    "dotenv": "^8.6.0",
+    "express": "^4.17.3",
+    "mongoose": "^5.13.14"
   },
   "devDependencies": {
-    "concurrently": "^6.0.0",
-    "nodemon": "^2.0.7"
+    "concurrently": "^6.5.1",
+    "nodemon": "^2.0.15"
   }
 }
