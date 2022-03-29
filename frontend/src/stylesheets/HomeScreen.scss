@@ -17,15 +17,22 @@
             max-width: 1000px;
         }
 
+        .homescreen-banner-center-text {
+            font-size: 3em;
+            color: $off-white;
+            text-shadow: 0 0 5px $black, 0 0 5px $black, 0 0 5px $black, 0 0 5px $black;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
         @media (max-width: 1200px) {
             img {
                 max-height: 452px;
                 max-width: 616px;
             }
-
-            // .banner2 {
-            //     display: none;
-            // }
         }
     }
 }
