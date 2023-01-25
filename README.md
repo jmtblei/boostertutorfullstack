@@ -1,3 +1,5 @@
+*AS OF 28 NOVEMBER 2022, HEROKU FREE DYNOS HAVE BECOME DEPRACATED AND WILL LONGER BE MAINTAINED FOR THIS PROJECT - YOU MAY EXPERIENCE ISSUES WITH CONNECTING TO THE DB*
+
 # The Booster Tutor
 ### [Live Demo](https://theboostertutor-demo.herokuapp.com/ "Live Demo of The Booster Tutor")
 
